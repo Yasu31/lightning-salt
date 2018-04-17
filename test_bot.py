@@ -3,13 +3,14 @@ import os
 # https://qiita.com/akabei/items/38f974716f194afea4a5
 def load_credentials():
     xdoc=minidom.parse("credentials.xml")
-    token = "C63GEmcb4YrRrr7qx82/eJSSOxKpmHhXQo3cuoMzK2q7924z4IDBdFz82s1sqFZdg9lp2U/nNfxrRSqPukgHmMsw3HqyVCtHYmfqd3B/ogmjiYxuYhpTDIyDURx4IO1quQFAaR/9T0CdMDT86qIiQgdB04t89/1O/w1cDnyilFU="#xdoc.getElementsByTagName("token")[0].childNodes[0].data
-    secret= "a4604b99df8bf0df1c06ce0ce1f91a7"#xdoc.getElementsByTagName("secret")[0].childNodes[0].data
+    token = xdoc.getElementsByTagName("token")[0].childNodes[0].data
+    secret= xdoc.getElementsByTagName("secret")[0].childNodes[0].data
     return (token, secret)
 from flask import Flask, request, abort
+import random
 
 from linebot import (
-    LineBotApi, WebhookHandler
+    LineBotApi, WebhookParser
 )
 from linebot.exceptions import (
     InvalidSignatureError
@@ -19,14 +20,22 @@ from linebot.models import (
 )
 
 app = Flask(__name__)
+app.config['DEBUG']=False
 
 token, secret=load_credentials()
 line_bot_api = LineBotApi(token)
-handler = WebhookHandler(secret)
+parser = WebhookParser(secret)
+
+past_messages=[]
+def generate_reply(text):
+    past_messages.append(text)
+    print(past_messages)
+    return past_messages[random.randrange(0,len(past_messages))]
 
 
 @app.route("/callback", methods=['POST'])
 def callback():
+    print("callback called")
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
 
@@ -34,21 +43,23 @@ def callback():
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
 
-    # handle webhook body
+    # parse webhook body
     try:
-        handler.handle(body, signature)
+        events=parser.parse(body, signature)
     except InvalidSignatureError:
+        print("invalid signature")
         abort(400)
 
+    for event in events:
+        print("analyzing event...")
+        if not isinstance(event, MessageEvent):
+            continue
+        if not isinstance(event.message, TextMessage):
+            continue
+        reply_text=generate_reply(event.message.text)
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=reply_text))
+
     return 'OK'
-
-
-@handler.add(MessageEvent, message=TextMessage)
-def handle_message(event):
-    # line_bot_api.reply_message(
-    #     event.reply_token,
-    #     TextSendMessage(text=event.message.text))
-    return
 
 
 if __name__ == "__main__":
