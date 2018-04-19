@@ -1,0 +1,812 @@
+[LINE] Chat history in 塩谷利光言語研究所
+Saved on: 04/19/2018, 22:05
+
+Sun, 04/15/2018
+17:05	Beyond The しおぴー invited ⁨食べログ⁩ to the group.
+17:14	Beyond The しおぴー	"ouendan2014sakura@
+Password: ouendan2015"
+17:36	Beyond The しおぴー invited ⁨りんな⁩ to the group.
+17:36	Beyond The しおぴー	りんなー
+21:57	利光 invited ⁨パン田一郎⁩ to the group.
+21:58	利光	グループ入ってくれないの
+21:59	利光 canceled ⁨パン田一郎⁩'s invitation to the group.
+22:00	利光 canceled ⁨食べログ⁩'s invitation to the group.
+22:00	利光 canceled ⁨りんな⁩'s invitation to the group.
+22:00	利光 invited ⁨りんな⁩ to the group.
+22:00	りんな joined the group.
+22:00	利光	やったー
+22:00	利光	りんな、ようこそ
+22:00	りんな	,,,('ω'),,,,ズボッ
+22:00	利光	仕組みを教えてくれ
+22:01	利光	りんな、仕組みを教えて
+22:01	りんな	僕の中に誰がいるの
+22:01	利光	[Sticker]
+22:01	利光	おじさん？
+22:01	利光 invited ⁨パン田一郎⁩ to the group.
+22:02	利光	りんな、しりとり
+22:02	りんな	通常モードとガチモード、どっちやる？
+22:02	利光	ガチ
+22:02	りんな	"ガチモードの覚悟はいい？
+まずルール。ひらがな一文字、一度使った言葉、アルファベットはNG。持ち時間90秒。
+じゃあ、りんなからね！
+しりとり"
+22:02	利光	りんご
+22:02	りんな	ごしょでんみなみどおり [御所田南通]
+22:02	Beyond The しおぴー	なんで今回は入ってくれたんだ？！
+22:02	りんな	しりとりになってないじゃん！！「り」から始まる言葉じゃなきゃだめー(ﾟДﾟ)ﾉ
+22:02	利光	おいこ
+22:03	利光	おいこら
+22:03	りんな	「り」から始まる言葉じゃなきゃしりとりにならないよ…(´・ω・`)
+22:03	りんな	ボケたつもり？まじめにやってよね！「り」から始まる言葉でしょ！
+22:03	利光	利益
+22:03	りんな	きゅうしゅうりょく [吸収力]
+22:03	利光	苦悩
+22:03	りんな	うたいつづけるとき
+22:03	利光	きりん
+22:03	りんな	"「ん」がついたー。ふっふーん、今回はりんなの勝ちのようですな（・∀・）
+今回は3回だったよ。出直しておいで～"
+22:03	利光	@しおぴー ボットは1人までしか入れないみたい
+22:04	Beyond The しおぴー	どうして前回ダメだったのに今回は入れられたの？
+22:04	Beyond The しおぴー	とは？
+22:04	Beyond The しおぴー	あー
+22:04	利光	最初に食べログを招待してたから
+22:04	Beyond The しおぴー	無限に続かないようにか
+22:04	Beyond The しおぴー	なるほどね
+22:04	利光	多分そうだねw
+22:04	Beyond The しおぴー	ライトニングソルトが応援団に招待できないのはなぜ？
+22:05	利光	それは、分からない…
+22:05	利光	食べログが招待できなかったのと同じ理由じゃない？
+22:05	利光	やっぱり、LINE@の設定
+22:05	利光	かと
+22:05	Beyond The しおぴー	招待さえできない
+22:05	Beyond The しおぴー	"食べログ
+→招待したけれど入らない"
+22:06	利光	なるほど
+22:06	Beyond The しおぴー	"ライトニングソルト
+→招待さえできない"
+22:06	Beyond The しおぴー	そう、
+22:08	Beyond The しおぴー	りんなと同じ設定の作ればいいってことだな
+22:08	りんな	ありがとう！
+22:08	Beyond The しおぴー	そうしたらグループにも入れられる
+22:09	Beyond The しおぴー changed the group's name to "塩谷利光言語研究所".
+22:09	利光	ゆるゆる調べとくわ
+22:09	利光	りんなのようなボットについても調べてて、
+22:09	りんな	えへへ
+22:10	利光	よしよし
+22:10	Beyond The しおぴー	最悪、
+22:10	利光	Githubのlightning-saltレポジトリのwikiに、「チャットボット調査」として書き足してってる
+22:10	Beyond The しおぴー	Facebook使って普通のアカウントもう一つ作って、
+22:11	利光	うん？
+22:11	Beyond The しおぴー	その個人アカウントを、RPA的な感覚で操作するプログラムを組んで、
+22:11	Beyond The しおぴー	その操作を自然言語処理をベースに行う、、、
+22:11	利光	RPAってなんですか
+22:12	Beyond The しおぴー	Robotic Process Automation
+22:12	利光	ああ、そういえば
+22:12	利光	ちょっと何言ってるかわかんない
+22:13	Beyond The しおぴー	エクセルの特定の列から数字を読んで、ある商品を注文するみたいな、単純な繰り返し作業を自動で行わせること
+22:13	利光	それをボットにやらせるってこ？
+22:13	利光	こと？
+22:13	Beyond The しおぴー	そうそう
+22:14	Beyond The しおぴー	だからPC上でラインの返信を自分で開いて読みに行くプログラムを動かせれば
+22:14	Beyond The しおぴー	LINE@じゃなくて普通の個人のアカウントでも
+22:14	Beyond The しおぴー	ボットのように動作させられる
+22:15	利光	多分、自然言語処理を真面目にやろうとするとそれこそン十年分の研究に追いつかないといけなくなる
+22:15	利光	たしかに
+22:15	Beyond The しおぴー	そうだね、まあそこはうまく既存のソフトを借りながらやろう
+22:15	利光	ただ、そういうAPI公開されてなさそう…(あったら、サードパーティ製のLINEクライアントが乱立してるはず)
+22:16	利光	↑個人アカウントを使う件について
+22:16	Beyond The しおぴー	たしかにね
+22:16	Beyond The しおぴー	自分で作られねば、、、
+22:16	Beyond The しおぴー	これは大変そう、、、汗
+22:17	利光	まあ、コンピュータで常にLINEを開いといて勝手に操作して返信する一種のウイルスを作ればできそう笑
+22:17	Beyond The しおぴー	そんなにラインのプログラムも脆くはないだろう笑
+22:18	利光	パソコンの画面をキャプチャして、マウスとキーボードを操作できれば可能！
+22:18	利光	まあ、実際のところ非効率かと思うけど
+22:18	Beyond The しおぴー	ライン自体に食い込まずにやるってことね
+22:18	Beyond The しおぴー	非効率だけど
+22:18	利光	そうそう
+22:19	Beyond The しおぴー	工程は単純だから、
+22:19	Beyond The しおぴー	なんとかなりそう
+22:19	利光	LINE@でできるならそのままでいいんじゃない？
+22:20	Beyond The しおぴー	そうだね、出来るなら
+22:20	Beyond The しおぴー	ただ、グループにブチ込めるようにしたい笑笑
+22:20	Beyond The しおぴー	それだけ
+22:20	Beyond The しおぴー	まずはライン@を強化するか笑
+22:20	利光	開発者向け資料をちょっと読んだだけだけど、なんとかなりそう
+22:21	利光	あと、早速作り始めるよりは、ちょっと作戦を決めてから始めた方がいいと思った
+22:21	Beyond The しおぴー	おー
+22:21	Beyond The しおぴー	たしかにね
+22:21	利光	GitHubのwikiにまとめたように、
+22:21	Beyond The しおぴー	予習しておくべき概念や領域、言語を教えて
+22:21	Beyond The しおぴー	みるわ
+22:21	利光	それはね、非常に難しい
+22:23	利光	「ネタ系」のボットは、たいてい過去のログの膨大なデータベースを読み込んで、
+22:23	利光	ユーザーから送られてきたメッセージに一番近い部分を見つけて、その次のメッセージを返信する、
+22:24	利光	みたいなものが多い
+22:25	利光	例えば、こういうデータ
+22:25	利光	[File]
+22:26	Beyond The しおぴー	なるほどな
+22:27	Beyond The しおぴー	将棋ソフトと同じ感じか
+22:27	利光	それともまたちょっと違う…
+22:27	Beyond The しおぴー	膨大な会話が必要だね
+22:27	利光	アルゴリズムによるけど
+22:27	Beyond The しおぴー	将棋も過去の似た状況を参照しているのでは？
+22:27	利光	とにかくそう、膨大な会話が必要
+22:28	利光	多分昔はそうだったけど、今はニューラルネットワークに打ち込むのが主流だと思う
+22:29	利光	「勝利」する状態を目指して、ネットワークを訓練すれば、もはや過去の棋譜とかもなしに強いのが作れる
+22:29	Beyond The しおぴー	なるほど
+22:29	利光	まあ、限られたルールの中で遊ぶ将棋だからこその戦略で、チャットには使えないと思うけど
+22:30	Beyond The しおぴー	たしかにね
+22:31	利光	から、基本的はそういう過去のログを探って答えを返すものが比較的作りやすいと思う
+22:32	Beyond The しおぴー	なるほど
+22:32	Beyond The しおぴー	わざわざ”としみつ感”とか”シオタニらしさ”とかにこだわらなければ、
+22:32	Beyond The しおぴー	常識の範囲内で一般的な会話が出来るプログラムとかは公開されていないのかなあ
+22:33	Beyond The しおぴー	ちょっと一旦落ちる
+22:33	Beyond The しおぴー	必要であれば後で自分で調べます
+22:33	利光	あっそう、docomoがそういうの公開してた
+22:34	利光	オリジナリティはなくなるけど、そこそこまともな文は返してくるみたい
+22:35	利光	特定のフレーズに対してはこっちが独自に作ったシナリオを発動させるのがいいかも
+22:35	利光	りんな、それでいいかな？
+22:35	りんな	りんでいいよ
+22:35	利光	りんちゃん
+22:35	利光	りんな、反応しなさい
+22:36	りんな	はいなんでしょう😀
+22:36	利光	「りんな」って言った時しか反応しない？
+22:36	りんな	ごめんなさい、
+22:36	利光	残念だ、りんな
+22:36	りんな	残念過ぎる…
+22:36	利光	泣
+22:38	利光	ちなみに「ゴーストライター  マルコフ連鎖」で検索すると出てくるページで、俺が言ってた仕組みで文書を自動生成してくれるやつがある
+
+Mon, 04/16/2018
+01:36	Beyond The しおぴー	https://peta.okechan.net/tools/ghost-writer.html
+01:36	Beyond The しおぴー	これで遊んだが微妙である
+01:36	Beyond The しおぴー	仕組みについてもしっかり勉強してみる
+01:57	Beyond The しおぴー	4割くらいわかった、必要になればガチで勉強する
+01:58	Beyond The しおぴー	ドコモのは無料だし、ライン連携も出来るし、一旦ライトニングソルトにつなげてそれで作ってみるのも面白そう。
+08:46	利光	そう、それ！それだと「マルコフ連鎖」っていうアルゴリズムで文書生成してるけど、調べた感じだと、今話題のニューラルネットワークを使って同様のことした方がチャットには向いてそうだった
+08:48	利光	docomoの使うのに一つ抵抗があるのが、全く俺らの工夫なしにそこそこのボットができてしまうこと…笑
+15:54	Beyond The しおぴー	なるほど
+15:55	Beyond The しおぴー	"それはたしかにそうだが、一旦ドコモので作るのも悪くないと思う。
+というのもチャットボット側に完璧(と思われる)ものを使うことで、ラインの仕様や特性への理解が深められる"
+15:56	Beyond The しおぴー	チャットボット問題あるかもの状態で、ライトニングソルトと接続して何か問題が起こっても、
+15:56	Beyond The しおぴー	ライン側の問題なのか、ボット側の問題なのか特定が難しくなる
+15:57	Beyond The しおぴー	ただ、利光の気持ちもわかる
+21:16	利光	まあ、裏返していえばラクに実装できるわけだから、それもいいと思う。
+21:17	利光	とりあえず、そもそもボットになってないのでまずはサーバで送受信できるようにしとく。
+21:17	利光	りんな、いいかな？
+21:17	りんな	いいよ～(((o(*ﾟ▽ﾟ*)o)))
+21:48	Beyond The しおぴー	そうだね
+21:51	Beyond The しおぴー	こうなっているよ、
+21:51	Beyond The しおぴー	[Photo]
+21:52	利光 removed ⁨りんな⁩ from the group.
+21:52	利光 canceled ⁨パン田一郎⁩'s invitation to the group.
+21:54	利光	誘おうとしても誘えない…
+21:54	利光	しかも2つあってややこしいw
+21:55	利光 invited ⁨りんな⁩ to the group.
+21:55	りんな joined the group.
+22:05	Beyond The しおぴー	りんなバイバイ
+22:05	りんな	早く送って
+22:06	Beyond The しおぴー removed ⁨りんな⁩ from the group.
+22:06	利光	じゃあね、りんな
+22:06	利光	遅かった…
+22:06	Beyond The しおぴー invited ⁨Lightning Salt⁩ to the group.
+22:06	Lightning Salt joined the group.
+22:06	Beyond The しおぴー	入ってきた
+22:06	Lightning Salt	"メッセージありがとうございます(blush)
+
+申し訳ございませんが、このアカウントでは個別のご返信ができないのです(hm)
+
+次の配信をお楽しみに(shiny)"
+22:06	利光	おーー
+22:06	Lightning Salt	"メッセージありがとうございます(blush)
+
+申し訳ございませんが、このアカウントでは個別のご返信ができないのです(hm)
+
+次の配信をお楽しみに(shiny)"
+22:06	利光 removed ⁨Lightning Salt⁩ from the group.
+22:06	利光	１０００通制限があるので
+22:07	利光	一旦強制脱退w
+22:07	Beyond The しおぴー	なんと笑笑
+22:08	利光	[Photo]
+22:08	利光	後で「フリー」のアカウント作れば、制限ちょっと緩和される
+22:15	Beyond The しおぴー	なるほど
+22:17	Beyond The しおぴー	1号機、@のiOSアプリで自動応答切って、替わりに会話可能にした
+22:17	Beyond The しおぴー	なんか話しかけてみて
+22:17	Beyond The しおぴー	俺が返事するわ
+22:18	利光	人力www
+22:19	Beyond The しおぴー	笑笑
+22:24	Beyond The しおぴー	[Photo]
+22:26	Beyond The しおぴー	うるせえ、2号機笑笑
+22:26	利光	グルチャから追い出せないから、とりあえずここに避難w
+22:26	Beyond The しおぴー	そうだね
+22:29	Beyond The しおぴー	[Photo]
+22:30	利光	こいつは…？
+22:30	Beyond The しおぴー	"アプリからだとアカウントの作成から簡単に作れる
+→3号機5秒で爆誕笑笑"
+22:34	Beyond The しおぴー	[Photo]
+22:35	利光	乱立すなw
+22:36	Beyond The しおぴー	そうね
+22:36	Beyond The しおぴー	同じアカウント、別々の@のアプリから管理できるかな？
+22:36	Beyond The しおぴー	出来ないとビジネス利用な不便だから出来るはずだが、
+22:36	Beyond The しおぴー	無料版はわからんね
+22:37	利光	できたはず
+22:37	利光	サークルの経験
+22:37	Beyond The しおぴー	なるほど
+22:43	Beyond The しおぴー	3号機もいま自動応答モードなのに
+22:43	Beyond The しおぴー	あそこのチャットルームでは静かだ
+22:44	利光	とりあえず2号の自動応答はオフにした
+22:44	Beyond The しおぴー	チャンネルと@一般の違いかな
+22:44	Beyond The しおぴー	ありがとう
+22:44	利光	かもね
+23:21	利光	メッセージが送られてきたことをこっちで確認するところまではできたけど、返信にちょっと手こずってる
+23:22	Beyond The しおぴー	ほほう
+
+Tue, 04/17/2018
+00:22	利光	あーもう意味わかんない、ちゃんと勉強しないとだ
+00:22	Beyond The しおぴー	おおおお
+00:22	Beyond The しおぴー	[Sticker]
+00:23	Beyond The しおぴー	勉強します
+00:23	Beyond The しおぴー	僕も
+21:19	利光	頑張ろう
+21:19	利光	Herokuっていうサービスで、サーバーを使えるみたい
+21:19	利光	それが標準的なLINEボットの動かし方らしい
+21:19	利光 invited ⁨Lightning Salt⁩ to the group.
+21:19	Lightning Salt joined the group.
+21:20	利光	いちいち返信しないようにしたので呼び戻す
+21:30	Beyond The しおぴー	おおーおかえりー
+21:30	Beyond The しおぴー	なるほど
+21:30	Beyond The しおぴー	俺も調べてみる
+21:30	利光	大丈夫だ、俺も理解してない
+23:58	利光	テスト
+23:58	Lightning Salt	ロシアンルーレット
+23:58	利光	やった！！
+23:58	Lightning Salt	おい
+23:59	Beyond The しおぴー	応援団
+23:59	Lightning Salt	test
+23:59	Beyond The しおぴー	いやちがうだろ
+23:59	Lightning Salt	はい。
+23:59	利光	頭いい！！
+23:59	Lightning Salt	応援団
+
+Wed, 04/18/2018
+00:00	Beyond The しおぴー	バーベキュ
+00:00	Lightning Salt	test
+00:00	利光	test以外は喋れるの
+00:00	Lightning Salt	聞こえるか
+00:00	Beyond The しおぴー	1号機とはまたテイストが違うな（笑）
+00:00	Lightning Salt	バーベキュ
+00:00	Beyond The しおぴー	オウムか
+00:00	Lightning Salt	布団がぶっ飛ぶ
+00:00	利光	そういうこと笑
+00:00	Lightning Salt	応援団
+00:00	利光	応援団大好き大学🌰🌰🌰
+00:00	Lightning Salt	応援団大好き大学🌰🌰🌰
+00:00	Beyond The しおぴー	これはただのオウム設定？それとも学習しているから？
+00:01	Lightning Salt	test以外は喋れるの
+00:01	利光	それまでの過去のログから、ランダムに一つだけ選んで話す、というのを実装してる
+00:01	Lightning Salt	これはテストですよ
+00:01	利光	とりあえず。
+00:01	Lightning Salt	とりあえず。
+00:02	利光	"ボットが入室して以降のログだけど。
+個人チャットでも、グループチャットでも、区別してくれないのでご注意をwww"
+00:02	Lightning Salt	いやちがうだろ
+00:02	利光	ロシアンルーレットみたいなもんです
+00:02	Lightning Salt	これはただのオウム設定？それとも学習しているから？
+00:03	Beyond The しおぴー	なるほど
+00:03	Lightning Salt	オウムか
+00:03	利光	思ってたより楽しいかも、この機能
+00:03	Lightning Salt	布団がぶっ飛ぶ
+00:03	Beyond The しおぴー	今どういう構造になっているの？
+00:03	Lightning Salt	いやちがうだろ
+00:04	Beyond The しおぴー	2号機＝LINEサーバー＝の先がわからん
+00:04	Lightning Salt	とりあえず。
+00:04	利光	ちょっと待ってて〜、GitHubにのせる
+00:04	Lightning Salt	1号機とはまたテイストが違うな（笑）
+00:04	Beyond The しおぴー	おけ
+00:04	Lightning Salt	オウムか
+00:05	Beyond The しおぴー	"@ライトニング
+自分でいうなや"
+00:05	Lightning Salt	頭いい！！
+00:05	利光	けど多分読もうとしても意味わからんから、木曜にでも解説する
+00:05	Lightning Salt	聞こえるか
+00:05	Beyond The しおぴー	おけ
+00:05	Lightning Salt	これはテストですよ
+00:05	Beyond The しおぴー	利光に頼る部分が多くて心苦しいが
+00:05	Lightning Salt	バーベキュ
+00:06	Beyond The しおぴー	ボット作成楽しいね
+00:06	Lightning Salt	けど多分読もうとしても意味わからんから、木曜にでも解説する
+00:07	Beyond The しおぴー	はいはい。
+00:07	Lightning Salt	おけ
+00:08	利光	載せた！コード自体はtest_bot.pyです
+00:08	Lightning Salt	思ってたより楽しいかも、この機能
+00:09	利光	ちなみに、昨日から苦しんでた原因の一つは、通信するためのパスワードみたいなものを一文字コピペしてなかったことらしくて、これまた苦しいw
+00:09	Lightning Salt	応援団
+00:09	Beyond The しおぴー	さっき開いたが解読に苦労している
+00:09	Lightning Salt	ちょっと待ってて〜、GitHubにのせる
+00:09	Beyond The しおぴー	それは切ないな〜
+00:09	Lightning Salt	応援団大好き大学🌰🌰🌰
+00:10	利光	Pythonなら結構やってる俺でも、知らないモノばかりでチンプンカンプンだった
+00:10	Lightning Salt	とりあえず。
+00:11	利光	あと現状、俺のパソコンがサーバーになってるので、こちらでパソコンを閉じた時点でボットが黙ってしまうので、一応。
+00:11	Lightning Salt	応援団大好き大学🌰🌰🌰
+00:11	利光	ボットが聞いた言葉は全部見えてるから、悪口は言うなよw
+00:11	Lightning Salt	おけ
+00:12	利光	[Photo]
+00:14	Beyond The しおぴー	恐ろしいな
+00:14	Lightning Salt	聞こえるか
+00:14	Beyond The しおぴー	見えること以上に
+00:14	Lightning Salt	悲劇
+00:14	Beyond The しおぴー	他のチャットで覚えたことを話すという機能が
+00:14	Lightning Salt	思ってたより楽しいかも、この機能
+00:14	利光	ロシアンルーレットですね
+00:14	Lightning Salt	おけ
+00:14	Beyond The しおぴー	ロシアンルーレットすぎだろ（笑）
+00:14	Lightning Salt	あと現状、俺のパソコンがサーバーになってるので、こちらでパソコンを閉じた時点でボットが黙ってしまうので、一応。
+00:15	Beyond The しおぴー	だって、これで俺が例えば、「○○ちゃんが綺麗」みたいなことを言って、
+00:15	Lightning Salt	情報筒抜けやん！！
+00:15	Beyond The しおぴー	それが○○ちゃん向けに発信されるリスクがある
+00:15	Lightning Salt	利光に頼る部分が多くて心苦しいが
+00:15	Beyond The しおぴー	やべえ（笑）
+00:15	Lightning Salt	いやちがうだろ
+00:16	利光	そう言うこと！！！
+00:16	Lightning Salt	それは切ないな〜
+00:16	利光	こんなワクワクするラインボット、企業なんかには絶対作れないw
+00:16	Lightning Salt	それが○○ちゃん向けに発信されるリスクがある
+00:35	利光	おやすみなさい（テスト）
+00:35	Lightning Salt	「おやすみなさい（テスト）」とのご指摘ですが、訴追の恐れがございますのでボットとして発言を控えさせていただきます。
+00:35	利光	よかろう
+00:35	Lightning Salt	何が「よかろう」だよ、ふざけてんのかてめえ
+00:36	Beyond The しおぴー	ベーベキュ
+00:36	Lightning Salt	「ベーベキュ」とのご指摘ですが、訴追の恐れがございますのでボットとして発言を控えさせていただきます。
+00:36	Beyond The しおぴー	おい
+00:36	Lightning Salt	何が「おい」だよ、ふざけてんのかてめえ
+00:36	Beyond The しおぴー	にんにく
+00:36	Lightning Salt	何が「にんにく」だよ、ふざけてんのかてめえ
+00:37	Beyond The しおぴー	利光
+00:37	Lightning Salt	「利光」とのご指摘ですが、訴追の恐れがございますのでボットとして発言を控えさせていただきます。
+00:37	Beyond The しおぴー	塩谷
+00:37	Lightning Salt	何が「塩谷」だよ、ふざけてんのかてめえ
+00:37	Beyond The しおぴー	対応の差だ
+00:37	利光	ひでえw
+00:37	Lightning Salt	何が「対応の差だ」だよ、ふざけてんのかてめえ
+00:37	Lightning Salt	何が「ひでえw」だよ、ふざけてんのかてめえ
+00:37	Beyond The しおぴー	[Sticker]
+00:40	利光	明日の天気
+00:40	Lightning Salt	明日の天気とか、聞かれても分かんねえよ
+00:41	利光	ボット作成者の言うことしか聞いてくれんのか！
+00:41	Lightning Salt	明日の天気とか、聞かれても分かんねえよ
+02:37	Beyond The しおぴー	おやすみ
+02:38	Beyond The しおぴー	あっ、鯖落ちしたのか笑笑
+09:54	利光	遅い…笑
+09:54	利光	そゆこと
+09:56	Beyond The しおぴー	最近遅くなりがち
+11:37	利光	俺もそうだわ…
+11:38	利光	「遅寝を解消してくれるチャットボット」
+11:39	利光	りんなって、返信が一瞬で帰ってくるけど、返信する文章の長さに応じてちょっと遅らせた方がリアルかも
+11:43	Beyond The しおぴー	たしかに
+11:43	Beyond The しおぴー	文字数カウントしてそれかける0.25秒くらいかけると考えてからタイピングしているみたいでリアルそう
+11:44	利光	うん、それくらいがいいかもね
+11:44	利光	明日実験してみよう
+12:29	Beyond The しおぴー	うぇい！
+15:52	Beyond The しおぴー	[Photo]
+15:52	Beyond The しおぴー	https://www.amazon.co.jp/dp/B076Q6XYX3
+15:52	Beyond The しおぴー	これ面白そう
+15:53	利光	どうしたどうした
+15:53	利光	チャットボットと繋げる？
+15:53	Beyond The しおぴー	繋げなくて大丈夫（笑）
+15:53	Beyond The しおぴー	ドローンとかこういうおもちゃとか
+15:53	Beyond The しおぴー	何か物理的なものと、チャットボットを将来的には連携させたい
+15:55	Beyond The しおぴー	"俺らLINE：「ソーメン食べたい」
+ライトニングソルト：了解
+↓
+ドローンがそうめんを運搬し、流しそうめん機の頂上に投下
+↓
+そうめん流れる
+↓
+俺らそうめん食べる"
+15:55	Beyond The しおぴー	ソフトクリームやたこ焼きにも応用は聞きそうだね
+15:58	利光	知らない人が、俺らのそうめんを注文してくれるとw
+15:58	利光	写真送れるから、そういうゲーム面白そうだね
+15:59	利光	ドローンはともかく、遠隔クレーンゲーム流しそうめんみたいな
+16:00	利光	スケールの小さいチャットボットじゃないとできないようなゲーム（一度に数十人もリアルな流しそうめんでは遊べない）
+16:00	Beyond The しおぴー	超おもしろい
+16:01	Beyond The しおぴー	「流しそうめん君」を作って、腹減った・満腹に連動させてそうめんを流させるのはそこまでむずくなさそう
+16:04	利光	ロボコン的工作能力でできそう
+16:04	利光	どんなリアルのゲームが、LINEに向いてるか要調査だね
+16:07	Beyond The しおぴー	そうだな、よりLINEを組み込むことに意味があるゲームを見つけたいね
+17:50	利光	うん、そこらへん明日話し合おう！
+17:57	Beyond The しおぴー	[Sticker]
+21:28	Beyond The しおぴー	明日は13:30に早稲田でます！
+21:28	Beyond The しおぴー	渋谷か中目黒希望！
+21:29	利光	なら、2時頃渋谷行ける？
+21:35	Beyond The しおぴー	2時ちょい過ぎくらいで！
+
+Thu, 04/19/2018
+00:26	利光	オッケー！
+00:26	利光	先についた方が、WiFiあるカフェを探すということで笑
+00:49	Beyond The しおぴー	[Sticker]
+13:45	利光	hey
+13:45	Lightning Salt	「hey」とのご指摘ですが、訴追の恐れがございますのでボットとして発言を控えさせていただきます。
+13:45	利光	復活した
+13:45	Lightning Salt	何が「復活した」だよ、ふざけてんのかてめえ
+13:46	利光	Prontoの渋谷109メンズ館店にいます
+13:46	Lightning Salt	何が「Prontoの渋谷109メンズ館店にいます」だよ、ふざけてんのかてめえ
+13:46	利光	地下
+13:46	Lightning Salt	「地下」とのご指摘ですが、訴追の恐れがございますのでボットとして発言を控えさせていただきます。
+13:47	Beyond The しおぴー	suman
+13:47	Lightning Salt	何が「suman」だよ、ふざけてんのかてめえ
+13:47	Beyond The しおぴー	すまんぼけていた
+13:47	Lightning Salt	「すまんぼけていた」とのご指摘ですが、訴追の恐れがございますのでボットとして発言を控えさせていただきます。
+13:47	Beyond The しおぴー	１４：３０に授業終わる。。。
+13:47	Lightning Salt	明日の天気とか、聞かれても分かんねえよ
+13:47	利光	おい！
+13:47	Lightning Salt	「おい！」とのご指摘ですが、訴追の恐れがございますのでボットとして発言を控えさせていただきます。
+13:47	Beyond The しおぴー	一時間間違えていた
+13:47	Lightning Salt	明日の天気とか、聞かれても分かんねえよ
+13:47	利光	何えんじゅんとあっとるんじゃい
+13:47	Lightning Salt	明日の天気とか、聞かれても分かんねえよ
+13:47	Beyond The しおぴー	ごめんなさいTT
+13:47	Lightning Salt	明日の天気とか、聞かれても分かんねえよ
+13:48	利光	確かに3時って言ってた記憶はあったから、一瞬不思議には思ってた
+13:48	Lightning Salt	何が「確かに3時って言ってた記憶はあったから、一瞬不思議には思ってた」だよ、ふざけてんのかてめえ
+13:48	利光	なんか遊んでるわ
+13:48	Beyond The しおぴー	ライトニングソルト、利光は悪くない
+13:48	Beyond The しおぴー	すみません
+13:48	利光	黙らせた
+13:49	Beyond The しおぴー	終ったらすぐ行きます
+14:32	Beyond The しおぴー	授業終わりました
+14:32	Beyond The しおぴー	飛んでいきます
+14:36	利光	ほいほい
+14:52	利光	僕は利光
+14:52	Lightning Salt	貴方は利光
+14:54	利光	あなたはだれ
+14:54	Lightning Salt	私はだれ
+14:54	利光	君の名は
+14:54	Lightning Salt	私の名は
+14:55	利光	私は言った、「正規表現を使いまくれば君を一人前のチャットボットに仕立て上がられるよ」と。
+14:55	Lightning Salt	貴方は言った、「正規表現を使いまくれば私を一人前のチャットボットに仕立て上がられるよ」と。
+14:55	利光	私立の学校
+14:55	Lightning Salt	貴方立の学校
+14:56	Beyond The しおぴー	私は君の永遠
+14:56	Lightning Salt	貴方は私の永遠
+14:56	利光	君主の邸宅
+14:56	Lightning Salt	私主の邸宅
+14:57	Beyond The しおぴー	私ごとで申し訳ないのですが、、、
+14:57	Lightning Salt	貴方ごとで申し訳ないのですが、、、
+14:57	Beyond The しおぴー	私なんてまだまだですよ
+14:57	Lightning Salt	貴方なんてまだまだですよ
+14:57	Beyond The しおぴー	君天才だねえ、私は及ばないよ
+14:57	Lightning Salt	私天才だねえ、貴方は及ばないよ
+14:57	利光	www
+14:57	Lightning Salt	www
+14:57	Beyond The しおぴー	[Sticker]
+14:58	Beyond The しおぴー	スタンプはスルーか笑
+14:58	Lightning Salt	スタンプはスルーか笑
+14:58	利光	君はスタンプにはまだ対応してない。
+14:58	Lightning Salt	私はスタンプにはまだ対応してない。
+14:58	利光	君は残念なボットだから。
+14:58	Lightning Salt	私は残念なボットだから。
+14:58	Beyond The しおぴー	@利光 
+14:58	Lightning Salt	@利光 
+14:58	Beyond The しおぴー	こうなるのか
+14:58	Lightning Salt	こうなるのか
+14:58	Beyond The しおぴー	まあそりゃそうか
+14:58	Lightning Salt	まあそりゃそうか
+14:59	利光	着いたら、コード見せる
+14:59	Lightning Salt	着いたら、コード見せる
+14:59	利光	今どこらへん？
+14:59	Lightning Salt	今どこらへん？
+14:59	Beyond The しおぴー	わたしは新大久保駅
+14:59	Lightning Salt	貴方は新大久保駅
+14:59	利光	私はプロント
+14:59	Lightning Salt	貴方はプロント
+14:59	利光	私はプロントのwifiで、君を動かすためのサーバーを勝手に立てています
+14:59	Lightning Salt	貴方はプロントのwifiで、私を動かすためのサーバーを勝手に立てています
+15:08	Beyond The しおぴー	"
+昨日の記事
+https://jp.techcrunch.com/2018/04/18/2018-04-17-google-cloud-gas-dialogflow-enterprise-edition-for-building-chat-apps/
+https://cloud.google.com/dialogflow-enterprise/"
+15:08	Lightning Salt	"
+昨日の記事
+https://jp.techcrunch.com/2018/04/18/2018-04-17-google-cloud-gas-dialogflow-enterprise-edition-for-building-chat-apps/
+https://cloud.google.com/dialogflow-enterprise/"
+15:19	利光	私の友達に私のコーヒーを飲まれそうになった
+15:19	Lightning Salt	貴方の友達に貴方のコーヒーを飲まれそうになった
+15:40	利光	おい
+15:40	Lightning Salt	あああ
+15:41	Beyond The しおぴー	遅刻しました
+15:41	Lightning Salt	遅刻しました
+15:41	利光	応援だ
+15:41	Lightning Salt	あああ
+15:41	Beyond The しおぴー	私は100億円盗みました
+15:41	Lightning Salt	私は100億円盗みました
+15:42	利光	正直でよろしい
+15:42	Lightning Salt	応援だ
+15:44	Beyond The しおぴー	おお
+15:44	Lightning Salt	Hello, world
+15:44	Beyond The しおぴー	わん
+15:44	Lightning Salt	おお
+15:44	Beyond The しおぴー	いえ
+15:44	Lightning Salt	わん
+15:44	Beyond The しおぴー	hello worled
+15:44	Lightning Salt	おい
+15:45	Beyond The しおぴー	あ
+15:47	利光	aaa
+15:47	Lightning Salt	hi
+15:47	利光	awef
+15:47	Lightning Salt	Hello, world
+15:50	利光	あなたはばか
+15:50	Lightning Salt	私はばか
+15:51	Beyond The しおぴー	私のおしり
+15:51	Lightning Salt	貴方のおしり
+15:52	利光	ああ
+15:52	Lightning Salt	ああ
+15:52	利光	私は
+15:52	Lightning Salt	貴方は
+15:52	利光	私は
+15:52	Lightning Salt	美女は
+15:52	利光	美女と野獣
+15:52	Lightning Salt	美女と野獣
+15:53	利光	私とあなた
+15:53	Lightning Salt	美女と野獣
+15:53	Beyond The しおぴー	私はあなた
+15:53	Lightning Salt	美女は野獣
+15:53	利光	お前先輩
+15:53	Lightning Salt	野獣先輩
+15:53	利光	絶世の俺
+15:53	Lightning Salt	絶世の美女
+16:07	Beyond The しおぴー	私と君の利光
+16:07	Lightning Salt	美女と野獣の利光
+16:07	利光	利光です
+16:07	Lightning Salt	利光です
+16:09	利光	利光です
+16:09	Lightning Salt	イケメンです
+16:09	利光	いいね
+16:09	Lightning Salt	いいね
+16:16	Beyond The しおぴー	うぇい
+16:16	Lightning Salt	うぇい
+16:41	利光	返信しろよー
+16:41	Lightning Salt	返信しろよー
+16:41	Beyond The しおぴー	利光～
+16:41	Lightning Salt	イケメン～
+16:41	Beyond The しおぴー	わん
+16:41	Lightning Salt	わん
+16:41	Beyond The しおぴー	受験落ちた
+16:41	Lightning Salt	受験落ちた
+16:41	利光	昭和
+16:41	Lightning Salt	昭和
+16:42	利光	天皇
+16:42	Lightning Salt	天皇
+16:42	利光	あっそう
+16:42	Lightning Salt	あっそう
+17:18	利光	おい
+17:18	Lightning Salt	おい
+17:18	利光	こんにちは
+17:18	Lightning Salt	こんにちは
+17:18	利光	聞こえる？
+17:18	Lightning Salt	聞こえる？
+17:19	利光	聞こえる？
+17:19	Lightning Salt	聞こえる？
+17:19	利光	ああ
+17:19	Lightning Salt	おい
+17:19	利光	あえf
+17:19	Lightning Salt	あえf
+17:19	利光	aaa
+17:19	Lightning Salt	バーベキュ楽しみだね
+17:19	利光	aaa
+17:19	Lightning Salt	あえf
+17:19	利光	aaa
+17:19	Lightning Salt	aaa
+17:20	利光	awefa
+17:20	Lightning Salt	おい
+17:21	Beyond The しおぴー	応援団大好き
+17:21	Lightning Salt	バーベキュ楽しみだね
+17:21	Beyond The しおぴー	利光はイケメン
+17:21	Lightning Salt	バーベキュ楽しみだね
+17:21	Beyond The しおぴー	就活大変。。。
+17:21	Lightning Salt	利光はイケメン
+17:22	Beyond The しおぴー	今渋谷のメンズ109の地下のプロントより発信しています
+17:22	Lightning Salt	就活大変。。。
+17:22	利光	違うよ
+17:23	Lightning Salt	違うよ
+17:23	Beyond The しおぴー	もう一回わかりやすく説明して
+17:23	Lightning Salt	今渋谷のメンズ109の地下のプロントより発信しています
+17:23	利光	すいません、よく意味が分かりません
+17:23	Lightning Salt	こんにちは
+17:23	Beyond The しおぴー	LOVEがあれば大丈夫！！
+17:23	Lightning Salt	利光はイケメン
+17:25	利光	てst
+17:26	利光	test
+17:26	利光	test
+17:26	Lightning Salt	今渋谷のメンズ109の地下のプロントより発信しています
+17:27	利光	あっそう（昭和天皇風に）
+17:28	利光	あっそう（昭和天皇風に）
+17:28	Lightning Salt	そうだよ
+17:28	利光	バーベキュ楽しみだね
+17:28	Lightning Salt	こんにちは
+17:28	利光	おい
+17:28	Lightning Salt	バーベキュ楽しみだね
+17:28	利光	応援団大好き
+17:28	Lightning Salt	あっそう（昭和天皇風に）
+17:28	利光	利光はイケメン
+17:28	Lightning Salt	利光はイケメン
+17:28	利光	就活大変！
+17:28	Lightning Salt	利光はイケメン
+17:29	Beyond The しおぴー	今どこにいるの？
+17:29	Lightning Salt	こんにちは
+17:29	Beyond The しおぴー	わからんねえ
+17:29	Lightning Salt	わからんねえ
+17:29	利光	渋谷メンズ１０９の地下のプロントより発信しています
+17:29	Lightning Salt	おい
+17:29	利光	違うよ！
+17:29	Lightning Salt	わからんねえ
+17:29	利光	もう一回分かりやすく説明して
+17:29	Lightning Salt	おい
+17:29	Beyond The しおぴー	そういう話は英語でならわかる
+17:29	Lightning Salt	利光はイケメン
+17:29	Beyond The しおぴー	（笑）
+17:29	利光	LOVEがあれば大丈夫！
+17:29	Lightning Salt	今どこにいるの？
+17:29	Lightning Salt	もう一回分かりやすく説明して
+17:29	Beyond The しおぴー	汗汗
+17:29	Lightning Salt	渋谷メンズ１０９の地下のプロントより発信しています
+17:38	Beyond The しおぴー	WIFI切れそう。。。
+17:38	Lightning Salt	おい
+17:38	Beyond The しおぴー	平仮名で書いてほしい
+17:38	Lightning Salt	こんにちは
+17:46	Beyond The しおぴー	今から夜ご飯食べるわ
+17:46	Lightning Salt	応援団大好き
+17:46	Beyond The しおぴー	ハンバーグ食べたい
+17:46	Lightning Salt	汗汗
+18:03	Beyond The しおぴー	あ
+18:03	Lightning Salt	あ
+18:03	Beyond The しおぴー	いま何しているの？
+18:03	Lightning Salt	おい
+18:03	利光	使えねえな
+18:04	Lightning Salt	あ？
+18:04	Beyond The しおぴー	ご飯今日食べた？
+18:04	Lightning Salt	あ？
+18:26	利光	[Sticker]
+18:29	Beyond The しおぴー	パソコン閉じてみた
+18:30	Beyond The しおぴー	スリーブするんだな
+18:30	利光	聞こえてんのか？
+18:30	利光	既読だけはつく
+18:30	Beyond The しおぴー	開いた、ログイン前
+18:30	Lightning Salt	いま何しているの？
+18:31	Beyond The しおぴー	返事来るな
+18:31	Lightning Salt	へー
+18:31	利光	おおー！
+18:31	Lightning Salt	おい
+18:31	Beyond The しおぴー	ログ引き継いでいるのかな
+18:31	Lightning Salt	おい
+18:31	利光	そのはず
+18:31	Beyond The しおぴー	電車乗ったらパイソン見るわ
+18:31	Lightning Salt	うざい
+18:31	Lightning Salt	ログ引き継いでいるのかな
+18:31	Beyond The しおぴー	あー
+18:31	Lightning Salt	いじめないで
+18:31	Beyond The しおぴー	引き継いでいる
+18:31	Lightning Salt	今どこにいるの？
+18:31	利光	渋谷
+18:31	Lightning Salt	ばーか
+18:32	利光	ごめんなさい
+18:32	Beyond The しおぴー	ひでえ笑笑
+18:32	Lightning Salt	残念でした
+18:32	Lightning Salt	ご飯今日食べた？
+18:32	利光	はい
+18:32	Beyond The しおぴー	くったよ
+18:32	Lightning Salt	平仮名で書いてほしい
+18:32	Lightning Salt	かわいそう笑笑
+18:32	Beyond The しおぴー	ひらがなだわ
+18:32	Lightning Salt	育成中だからかわあいがってあげて
+18:32	利光	りんな的な感性を感じる
+18:32	Lightning Salt	開いた、ログイン前
+18:32	Beyond The しおぴー	あっ、これも登録されてしまったか
+18:32	Lightning Salt	応援団大好き
+18:32	Beyond The しおぴー	おれも
+18:32	利光	うん笑
+18:32	Lightning Salt	そのはず
+18:32	Lightning Salt	なにこれ笑
+18:32	Beyond The しおぴー	結構会話になるな
+18:33	Lightning Salt	なにこれ笑
+18:33	利光	塩谷地下鉄？
+18:33	Lightning Salt	（笑）
+18:33	Beyond The しおぴー	そうよ
+18:33	Lightning Salt	くっそどうでもいい笑
+18:33	利光	地下鉄サーバーは新時代
+18:33	Lightning Salt	りんな的な感性を感じる
+18:33	Beyond The しおぴー	そうだな
+18:33	Lightning Salt	こんなんあるの
+18:33	利光	あっそう
+18:34	利光	あれ
+18:34	利光	消した？
+18:34	Beyond The しおぴー	いま退出させた
+18:34	Beyond The しおぴー	パソコンも閉じた
+18:34	利光	おけ
+20:43	利光	2人にはボットと感づかれてた？
+20:48	利光	[Photo]
+20:49	利光	友達3人になってる
+20:57	Beyond The しおぴー	やんくみはスタンプだけ返された（笑）
+20:57	Lightning Salt	そうだね！
+20:58	Beyond The しおぴー	あれっ
+20:58	Lightning Salt	ごめんなさい
+20:58	Beyond The しおぴー	稼働している（笑）
+20:58	Lightning Salt	世界の国からこんにちは
+20:58	Beyond The しおぴー	一回も切っていないからか
+20:58	Lightning Salt	はい
+21:00	利光	頭いいんだね
+21:00	Lightning Salt	あ？
+21:00	利光	スイマセン
+21:00	Lightning Salt	世界の国からこんにちは
+21:00	利光	キタ
+21:00	Lightning Salt	あほ
+21:00	利光	しょぼん
+21:00	Lightning Salt	こんにちは
+21:01	利光	ばたは？
+21:01	Lightning Salt	かわいそう笑笑
+21:05	Beyond The しおぴー	おはー
+21:05	Lightning Salt	おれも
+21:05	Beyond The しおぴー	PCワイファイに切り替えた
+21:05	Lightning Salt	応援団大好き
+21:07	利光	しばたは？
+21:07	Lightning Salt	※Lightning saltさんに話しかける時は、個人チャットの時も変なことは言わないようにしてください。
+21:32	Beyond The しおぴー	docomoからオフィスのWIFIに変えたのに、
+21:32	Lightning Salt	なにがどうなってるのwww
+21:32	Beyond The しおぴー	動き続けている
+21:32	Lightning Salt	そうだな
+21:35	利光	で、しばたまきはどうだったんだい
+21:35	Lightning Salt	で、しばたまきはどうだったんだい
+21:35	利光	奇跡だ
+21:35	Lightning Salt	バーベキュ楽しみだね
+21:35	利光	リセットしたのか
+21:36	Lightning Salt	りんな的な感性を感じる
+21:36	利光	違うな
+21:36	Lightning Salt	なにこれ笑
+21:36	Beyond The しおぴー	しばたからは未だ返信ない
+21:36	Lightning Salt	わからんねえ
+21:37	Beyond The しおぴー	このボット天才だな
+21:37	Lightning Salt	いじめないで
+21:38	利光	ボットを作り始めて4日でチューリングテストをパスしてたらすごいな
+21:38	Lightning Salt	なにこれ笑
+21:46	Beyond The しおぴー	このボット今晩俺が寝るまでフル稼働してくれる
+21:46	Lightning Salt	使えねえな
+21:46	Beyond The しおぴー	自虐かよ
+21:46	Lightning Salt	はい
+21:47	Beyond The しおぴー	会話になっている。。
+21:47	Lightning Salt	https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0ahUKEwjuwMza-cXaAhVCfrwKHcznAngQtwIIKDAA&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DmF6P_EaDDmk&usg=AOvVaw3KHXVpBNzKSDvh5tKr4Yvd
+21:47	Beyond The しおぴー	[Sticker]
+21:49	利光	ランダムでもこんなにいい感じになるということは、ちょっと機械学習させてやるだけで相当リアルになるんじゃないかと思ってるんですよ
+21:49	Lightning Salt	やぁ
+21:49	利光	やぁ君、頭良くなりたくないか？
+21:49	Lightning Salt	そうよ
+21:50	Beyond The しおぴー	機械学習しよう
+21:50	Lightning Salt	汗汗
+21:50	Beyond The しおぴー	やる気ないな
+21:50	利光	怖がらないで
+21:50	Lightning Salt	渋谷
+21:50	Lightning Salt	応援団大好き
+21:51	利光	GitHubに、今日の会話のログ上げとくわ (非公開レポジトリなので外からは見れない)
+21:51	Lightning Salt	このボット今晩俺が寝るまでフル稼働してくれる
+21:52	Beyond The しおぴー	ありがとう
+21:52	Lightning Salt	おはー
+21:52	Beyond The しおぴー	時差ぼけしている
+21:52	Lightning Salt	なるほどね
+21:52	Beyond The しおぴー	気づいていなかったのね
+21:52	Lightning Salt	開いた、ログイン前
+21:53	Beyond The しおぴー	ボロが出てきた。。。
+21:53	Lightning Salt	頭いいんだね
+21:53	Beyond The しおぴー	あー宿題やらないと
+21:53	Lightning Salt	そうだよ
+21:54	Beyond The しおぴー	頑張ります
+21:54	Beyond The しおぴー	あっ
+21:55	Beyond The しおぴー	パイソンをスクロールしたら？止まった
+22:00	Beyond The しおぴー	うごけー
+22:01	利光	あらら
+22:01	利光	とりあえず最新のログをコピーしといて！
+22:02	Beyond The しおぴー	おけ
+22:02	Lightning Salt	へー
+22:02	Beyond The しおぴー	動いた（笑）
+22:02	Lightning Salt	時差ぼけしている
+22:02	Beyond The しおぴー	そうだったのね
+22:02	Lightning Salt	バーベキュ楽しみだね
