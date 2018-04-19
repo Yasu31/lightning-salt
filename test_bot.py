@@ -1,5 +1,5 @@
 from xml.dom import minidom
-import os
+import os, re
 # https://qiita.com/akabei/items/38f974716f194afea4a5
 def load_credentials():
     xdoc=minidom.parse("credentials.xml")
@@ -28,9 +28,19 @@ parser = WebhookParser(secret)
 
 past_messages=[]
 def generate_reply(text):
-    past_messages.append(text)
-    print(past_messages)
-    return past_messages[random.randrange(0,len(past_messages))]
+    print("received\t"+text)
+    reply=""
+    # # use random old message
+    # past_messages.append(text)
+    # print(past_messages)
+    # return past_messages[random.randrange(0,len(past_messages))]
+
+    pattern_me="(私|わたし|俺|僕|自分)"
+    pattern_you="(君|あなた|お前)"
+    reply=re.sub(pattern_me, "貴方", text)
+    reply=re.sub(pattern_you, "私", reply)
+    print("reply\t"+reply)
+    return reply
 
 
 @app.route("/callback", methods=['POST'])
