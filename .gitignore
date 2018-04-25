@@ -4,3 +4,4 @@ ls-env*
 env/*
 *__pycache__*
 *.DS_Store
+*.py~
