@@ -18,3 +18,4 @@ six
 semidbm
 nose
 pykakasi
+requests
