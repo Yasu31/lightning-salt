@@ -43,11 +43,24 @@ class Logic:
             rep_text = self.rooms[i].messages_list[random.randint(
                 0, len(self.rooms[i].messages_list) - 1)]
             self.rooms[i].send_text(rep_text)
-            self.print_debug(self.rooms[i].messages)
+            self.print_debug(self.rooms[i].messages_log)
         return TextSendMessage(text=rep_text)
 
-    def receive_image(self, user_id, group_id, image):
-        pass
+    def receive_media(self, user_id, group_id, r, ext):
+        filename = str(int(time.time())) + ext
+        room_num = self.identify(user_id, group_id)
+        if ext == '.jpg':
+            # received image
+            self.make_room_path(self.rooms[room_num].id)
+            print("saving image to file...")
+            with open("log/" + str(self.rooms[room_num].id) + "/" + filename, 'wb') as fd:
+                for chunk in r.iter_content(chunk_size=128):
+                    fd.write(chunk)
+            print("finished saving.")
+        self.rooms[room_num].receive_text(user_id, filename)
+        text = "画像送ってくれたね、でも今は画像で返信できない><"
+        self.rooms[room_num].send_text(text)
+        return TextSendMessage(text=text)
 
     def identify(self, user_id, group_id):
         '''
@@ -104,27 +117,40 @@ class Logic:
         if self.debug:
             print(text)
 
-    def save_log(self):
-        '''
-        saves logs of conversations
-        '''
-        self.print_debug("making log...")
+    def make_default_path(self):
+        self.print_debug("making log directory...")
         # make directories if they don't exist yet.
         if not os.path.exists("log"):
             # https://stackoverflow.com/questions/273192/how-can-i-create-a-directory-if-it-does-not-exist
             os.makedirs("log")
-        if not os.path.exists("log/all_messages"):
-            os.makedirs("log/all_messages")
-        file = open("log/all_messages/" + str(self.id) + ".txt", 'w')
+        if not os.path.exists("log/all_received_messages"):
+            os.makedirs("log/all_received_messages")
+
+    def make_room_path(self, room_id):
+        if not os.path.exists("log/" + str(room_id)):
+            os.makedirs("log/" + str(room_id))
+        if not os.path.exists("log/" + str(room_id) + "/all_received_messages"):
+            os.makedirs("log/" + str(room_id) + "/all_received_messages")
+
+    def save_log(self):
+        '''
+        saves logs of conversations
+        '''
+        self.make_default_path()
+        file = open("log/all_received_messages/" + str(self.id) + ".txt", 'w')
         for message in self.all_messages:
             file.write(message + str("\n"))
         file.close()
         for room in self.rooms:
-            if not os.path.exists("log/" + str(room.id)):
-                os.makedirs("log/" + str(room.id))
+            self.make_room_path(room.id)
             file = open("log/" + str(room.id) + "/" +
                         str(self.id) + ".txt", 'w')
-            file.write(room.messages)
+            file.write(room.messages_log)
+            file.close()
+            file = open("log/" + str(room.id) +
+                        "/all_received_messages.txt", 'a')
+            for line in room.messages_list:
+                file.write(line + "\n")
             file.close()
 
 
@@ -141,10 +167,8 @@ class Room:
         '''
         self.id = id
         self.users = []
-        self.messages = ""
-        self.messages_list = ['こんにちは', 'そうだよ', 'バーベキュ楽しみだね', 'あっそう（昭和天 皇風に）',
-                              '利光はイケメン', '就活大変！', '今どこにいるの？', 'わからんねえ',
-                              '渋谷メンズ１０９の地下のプロントより発信しています']
+        self.messages_log = ""
+        self.messages_list = []
         self.initialize_messages()
 
     def identify(self, user_id):
@@ -164,25 +188,38 @@ class Room:
     def receive_text(self, user_id, text):
         '''
         when the bot receives a text message from the user.
+        Special cases: when text is "IMAGE" or "VIDEO" or "AUDIO"
         '''
         name = "John Doe??"
         i = self.identify(user_id)
         if i >= 0:
             name = self.users[i].display_name
+        if text[-3:] == "jpg" or text[-3:] == "mp4" or text[-3:] == "m4a":
+            self.messages_log += (name + "\t" + self.get_time() +
+                                  "\t" + text + "\n")
+            return
+        self.messages_log += (name + "\t" +
+                              self.get_time() + "\t" + text + "\n")
         self.messages_list.append(text)
-        self.messages += (name + "\t" + self.get_time() + "\t" + text + "\n")
 
     def send_text(self, text):
         '''
         when the bot sends a text message to the user
         '''
-        self.messages += ("BOT\t" + self.get_time() + "\t" + text + "\n")
+        self.messages_log += ("BOT\t" + self.get_time() + "\t" + text + "\n")
 
     def initialize_messages(self):
         cur_time = time.localtime()
-        self.messages += (str(cur_time.tm_year) + "年" +
-                          str(cur_time.tm_mon) + "月" + str(cur_time.tm_mday)
-                          + "日" + "\n")
+        self.messages_log += (str(cur_time.tm_year) + "年" +
+                              str(cur_time.tm_mon) + "月" +
+                              str(cur_time.tm_mday)
+                              + "日" + "\n")
+        try:
+            file = open("log/" + self.id + "/all_received_messages.txt", 'r')
+            print("loading previous logs")
+            self.messages_list = file.readlines()
+        except FileNotFoundError:
+            self.messages_list = ["こんにちは！", "ヨロです"]
 
     def get_time(self):
         cur_time = time.localtime()
