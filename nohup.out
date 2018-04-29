@@ -1327,3 +1327,2874 @@ Traceback (most recent call last):
     raise ConnectTimeout(e, request=request)
 requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.line.me', port=443): Max retries exceeded with url: /v2/bot/profile/Ud1ec870e773a12d3ff494a8ccf348153 (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x1095d5358>, 'Connection to api.line.me timed out. (connect timeout=5)'))
 127.0.0.1 - - [29/Apr/2018 13:37:51] "POST /callback HTTP/1.1" 500 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Apr/2018 17:18:26] "POST /callback HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Apr/2018 17:20:01] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:20:13] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:20:44] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:20:46] "POST /callback HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Apr/2018 17:21:52] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:21:58] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:01] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:06] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:13] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:19] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:21] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:23] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:24] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:26] "POST /callback HTTP/1.1" 200 -
+waiting for message event...
+waiting for message event...
+waiting for message event...
+waiting for message event...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+new solo user!
+New user or room. Retrieving info about user from LINE API....
+adding new user
+Is a new indivisual
+loading previous logs
+user info retrieved. added user to room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.127.0.0.1 - - [29/Apr/2018 17:22:27] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:29] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:30] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:31] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:32] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:33] "POST /callback HTTP/1.1" 200 -
+
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None127.0.0.1 - - [29/Apr/2018 17:22:35] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:36] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:37] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:38] "POST /callback HTTP/1.1" 200 -
+
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+127.0.0.1 - - [29/Apr/2018 17:22:40] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:41] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:43] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:45] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:48] "POST /callback HTTP/1.1" 200 -
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None127.0.0.1 - - [29/Apr/2018 17:22:49] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:51] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:22:53] "POST /callback HTTP/1.1" 200 -
+
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	こんにちは！
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	か
+BOT	4月29日17時22分	そうですか
+127.0.0.1 - - [29/Apr/2018 17:22:58] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:23:07] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:23:15] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:23:20] "POST /callback HTTP/1.1" 200 -
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	か
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	はい
+BOT	4月29日17時22分	あ
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	か
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	はい
+BOT	4月29日17時22分	あ
+利光	4月29日17時23分	テst
+BOT	4月29日17時23分	ヨロです
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	か
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	はい
+BOT	4月29日17時22分	あ
+利光	4月29日17時23分	テst
+BOT	4月29日17時23分	ヨロです
+
+利光	4月29日17時23分	そっか、短すぎるのは覚えてないのか
+BOT	4月29日17時23分	あ
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	か
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	はい
+BOT	4月29日17時22分	あ
+利光	4月29日17時23分	テst
+BOT	4月29日17時23分	ヨロです
+
+利光	4月29日17時23分	そっか、短すぎるのは覚えてないのか
+BOT	4月29日17時23分	あ
+利光	4月29日17時23分	いや、覚えてる
+BOT	4月29日17時23分	t
+127.0.0.1 - - [29/Apr/2018 17:23:25] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:23:29] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:23:31] "POST /callback HTTP/1.1" 200 -
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	か
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	はい
+BOT	4月29日17時22分	あ
+利光	4月29日17時23分	テst
+BOT	4月29日17時23分	ヨロです
+
+利光	4月29日17時23分	そっか、短すぎるのは覚えてないのか
+BOT	4月29日17時23分	あ
+利光	4月29日17時23分	いや、覚えてる
+BOT	4月29日17時23分	t
+利光	4月29日17時23分	？？
+BOT	4月29日17時23分	聞こえてる？
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	か
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	はい
+BOT	4月29日17時22分	あ
+利光	4月29日17時23分	テst
+BOT	4月29日17時23分	ヨロです
+
+利光	4月29日17時23分	そっか、短すぎるのは覚えてないのか
+BOT	4月29日17時23分	あ
+利光	4月29日17時23分	いや、覚えてる
+BOT	4月29日17時23分	t
+利光	4月29日17時23分	？？
+BOT	4月29日17時23分	聞こえてる？
+
+利光	4月29日17時23分	確率のもない？
+BOT	4月29日17時23分	お
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時21分	hi
+BOT	4月29日17時21分	ヨロです
+
+利光	4月29日17時21分	そうですか
+BOT	4月29日17時21分	聞こえてる？
+
+利光	4月29日17時22分	おお
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	覚えてくれてる
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	テスト
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	覚えてくれてる
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	おお
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	hey
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	ugh
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	hi
+利光	4月29日17時22分	r
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	t
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	あ
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	い
+BOT	4月29日17時22分	い
+利光	4月29日17時22分	う
+BOT	4月29日17時22分	ヨロです
+
+利光	4月29日17時22分	え
+BOT	4月29日17時22分	あ
+利光	4月29日17時22分	お
+BOT	4月29日17時22分	こんにちは！
+
+利光	4月29日17時22分	か
+BOT	4月29日17時22分	そうですか
+利光	4月29日17時22分	はい
+BOT	4月29日17時22分	あ
+利光	4月29日17時23分	テst
+BOT	4月29日17時23分	ヨロです
+
+利光	4月29日17時23分	そっか、短すぎるのは覚えてないのか
+BOT	4月29日17時23分	あ
+利光	4月29日17時23分	いや、覚えてる
+BOT	4月29日17時23分	t
+利光	4月29日17時23分	？？
+BOT	4月29日17時23分	聞こえてる？
+
+利光	4月29日17時23分	確率のもない？
+BOT	4月29日17時23分	お
+利光	4月29日17時23分	問題？
+BOT	4月29日17時23分	お
+127.0.0.1 - - [29/Apr/2018 17:23:33] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:23:35] "POST /callback HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Apr/2018 17:23:56] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:23:59] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:24:03] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:25:42] "POST /callback HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Apr/2018 17:26:06] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:26:10] "POST /callback HTTP/1.1" 200 -
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "test_bot_lightning.py", line 90, in analyze_messages
+    line_bot_api.reply_message(event.reply_token, replies)
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 94, in reply_message
+    '/v2/bot/message/reply', data=json.dumps(data), timeout=timeout
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 372, in _post
+    self.__check_error(response)
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 381, in __check_error
+    raise LineBotApiError(response.status_code, error)
+linebot.exceptions.LineBotApiError: <LineBotApiError [The request body has 1 error(s)]>
+
+127.0.0.1 - - [29/Apr/2018 17:26:13] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:27:10] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:27:16] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:27:27] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:27:37] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:27:41] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:27:44] "POST /callback HTTP/1.1" 200 -
+waiting for message event...
+waiting for message event...
+waiting for message event...
+waiting for message event...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+new solo user!
+New user or room. Retrieving info about user from LINE API....
+adding new user
+Is a new indivisual
+loading previous logs
+user info retrieved. added user to room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	こんにちは！
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	
+
+
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	
+
+利光	4月29日17時26分	test3
+BOT	4月29日17時26分	こんにちは！
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+New room!
+New user or room. Retrieving info about user from LINE API....
+adding new user
+Is a new room or new user in old room
+Is a new room!
+user info retrieved. added user to room.
+message received, Analyzing source...
+received text!
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+2018年4月29日
+しおぴー	4月29日17時27分	こんち
+BOT	4月29日17時27分	こんにちは！
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+2018年4月29日
+しおぴー	4月29日17時27分	こんち
+BOT	4月29日17時27分	こんにちは！
+しおぴー	4月29日17時27分	こんちくしょう
+BOT	4月29日17時27分	ヨロです
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+2018年4月29日
+しおぴー	4月29日17時27分	こんち
+BOT	4月29日17時27分	こんにちは！
+しおぴー	4月29日17時27分	こんちくしょう
+BOT	4月29日17時27分	ヨロです
+しおぴー	4月29日17時27分	頭良くなったな
+BOT	4月29日17時27分	こんち
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+2018年4月29日
+しおぴー	4月29日17時27分	こんち
+BOT	4月29日17時27分	こんにちは！
+しおぴー	4月29日17時27分	こんちくしょう
+BOT	4月29日17時27分	ヨロです
+しおぴー	4月29日17時27分	頭良くなったな
+BOT	4月29日17時27分	こんち
+しおぴー	4月29日17時27分	前のままか
+BOT	4月29日17時27分	こんち
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+2018年4月29日
+しおぴー	4月29日17時27分	こんち
+BOT	4月29日17時27分	こんにちは！
+しおぴー	4月29日17時27分	こんちくしょう
+BOT	4月29日17時27分	ヨロです
+しおぴー	4月29日17時27分	頭良くなったな
+BOT	4月29日17時27分	こんち
+しおぴー	4月29日17時27分	前のままか
+BOT	4月29日17時27分	こんち
+しおぴー	4月29日17時27分	うんち
+BOT	4月29日17時27分	うんち
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:U115725037a2ad854f8505976c4c44dda, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+2018年4月29日
+しおぴー	4月29日17時27分	こんち
+BOT	4月29日17時27分	こんにちは！
+しおぴー	4月29日17時27分	こんちくしょう
+BOT	4月29日17時27分	ヨロです
+しおぴー	4月29日17時27分	頭良くなったな
+BOT	4月29日17時27分	こんち
+しおぴー	4月29日17時27分	前のままか
+BOT	4月29日17時27分	こんち
+しおぴー	4月29日17時27分	うんち
+BOT	4月29日17時27分	うんち
+しおぴー	4月29日17時27分	ごめん
+BOT	4月29日17時27分	こんちくしょう
+127.0.0.1 - - [29/Apr/2018 17:32:54] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:33:01] "POST /callback HTTP/1.1" 200 -
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "test_bot_lightning.py", line 93, in analyze_messages
+    analyze_messages()
+  File "test_bot_lightning.py", line 93, in analyze_messages
+    analyze_messages()
+  File "test_bot_lightning.py", line 90, in analyze_messages
+    line_bot_api.reply_message(event.reply_token, replies)
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 94, in reply_message
+    '/v2/bot/message/reply', data=json.dumps(data), timeout=timeout
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 372, in _post
+    self.__check_error(response)
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 381, in __check_error
+    raise LineBotApiError(response.status_code, error)
+linebot.exceptions.LineBotApiError: <LineBotApiError [The request body has 1 error(s)]>
+
+127.0.0.1 - - [29/Apr/2018 17:33:09] "POST /callback HTTP/1.1" 200 -
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "test_bot_lightning.py", line 93, in analyze_messages
+    analyze_messages()
+  File "test_bot_lightning.py", line 93, in analyze_messages
+    analyze_messages()
+  File "test_bot_lightning.py", line 90, in analyze_messages
+    line_bot_api.reply_message(event.reply_token, replies)
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 94, in reply_message
+    '/v2/bot/message/reply', data=json.dumps(data), timeout=timeout
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 372, in _post
+    self.__check_error(response)
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 381, in __check_error
+    raise LineBotApiError(response.status_code, error)
+linebot.exceptions.LineBotApiError: <LineBotApiError [The request body has 1 error(s)]>
+
+127.0.0.1 - - [29/Apr/2018 17:33:12] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:37:27] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:37:30] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:37:33] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:37:41] "POST /callback HTTP/1.1" 200 -
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "test_bot_lightning.py", line 93, in analyze_messages
+    analyze_messages()
+  File "test_bot_lightning.py", line 93, in analyze_messages
+    analyze_messages()
+  File "test_bot_lightning.py", line 93, in analyze_messages
+    analyze_messages()
+  File "test_bot_lightning.py", line 90, in analyze_messages
+    line_bot_api.reply_message(event.reply_token, replies)
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 94, in reply_message
+    '/v2/bot/message/reply', data=json.dumps(data), timeout=timeout
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 372, in _post
+    self.__check_error(response)
+  File "/Users/toshimitsu/Envs/ls-env/lib/python3.6/site-packages/linebot/api.py", line 381, in __check_error
+    raise LineBotApiError(response.status_code, error)
+linebot.exceptions.LineBotApiError: <LineBotApiError [The request body has 1 error(s)]>
+
+127.0.0.1 - - [29/Apr/2018 17:37:47] "POST /callback HTTP/1.1" 200 -
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+New user in old room!
+New user or room. Retrieving info about user from LINE API....
+adding new user
+Is a new room or new user in old room
+new user in old room!
+user info retrieved. added user to room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:C577cbbe2c112f8c49ff1626395ac33a9
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 1
+2018年4月29日
+しおぴー	4月29日17時27分	こんち
+BOT	4月29日17時27分	こんにちは！
+しおぴー	4月29日17時27分	こんちくしょう
+BOT	4月29日17時27分	ヨロです
+しおぴー	4月29日17時27分	頭良くなったな
+BOT	4月29日17時27分	こんち
+しおぴー	4月29日17時27分	前のままか
+BOT	4月29日17時27分	こんち
+しおぴー	4月29日17時27分	うんち
+BOT	4月29日17時27分	うんち
+しおぴー	4月29日17時27分	ごめん
+BOT	4月29日17時27分	こんちくしょう
+利光	4月29日17時32分	おいこら
+BOT	4月29日17時32分	前のままか
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	
+
+利光	4月29日17時26分	test3
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時33分	あ
+BOT	4月29日17時33分	
+
+
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	
+
+利光	4月29日17時26分	test3
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時33分	あ
+BOT	4月29日17時33分	
+
+利光	4月29日17時33分	え？
+BOT	4月29日17時33分	
+
+
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:C37dbee925eb90cc72cd0f9f8e6ca02b2
+It's a group chat room.
+New room!
+New user or room. Retrieving info about user from LINE API....
+adding new user
+Is a new room or new user in old room
+Is a new room!
+user info retrieved. added user to room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:C37dbee925eb90cc72cd0f9f8e6ca02b2
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 2
+2018年4月29日
+利光	4月29日17時33分	あ
+BOT	4月29日17時33分	あ
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	
+
+利光	4月29日17時26分	test3
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時33分	あ
+BOT	4月29日17時33分	
+
+利光	4月29日17時33分	え？
+BOT	4月29日17時33分	
+
+利光	4月29日17時37分	oi
+BOT	4月29日17時37分	hey
+
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:C37dbee925eb90cc72cd0f9f8e6ca02b2
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 2
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:C37dbee925eb90cc72cd0f9f8e6ca02b2
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 2
+2018年4月29日
+利光	4月29日17時33分	あ
+BOT	4月29日17時33分	あ
+利光	4月29日17時37分	oi
+BOT	4月29日17時37分	ヨロです
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:C37dbee925eb90cc72cd0f9f8e6ca02b2
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 2
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:C37dbee925eb90cc72cd0f9f8e6ca02b2
+It's a group chat room.
+Identified the room. Now checking if                                     the user has already spoken in that room
+User found in room 2
+2018年4月29日
+利光	4月29日17時33分	あ
+BOT	4月29日17時33分	あ
+利光	4月29日17時37分	oi
+BOT	4月29日17時37分	ヨロです
+利光	4月29日17時37分	hey
+BOT	4月29日17時37分	ヨロです
+
+making log directory...
+waiting for message event...
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	
+
+利光	4月29日17時26分	test3
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時33分	あ
+BOT	4月29日17時33分	
+
+利光	4月29日17時33分	え？
+BOT	4月29日17時33分	
+
+利光	4月29日17時37分	oi
+BOT	4月29日17時37分	hey
+
+利光	4月29日17時37分	いつ壊れるの
+BOT	4月29日17時37分	
+
+
+something received
+
+returning 'OK'...
+1 number of events received
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+previously added user in a known room.
+message received, Analyzing source...
+received text!
+trying to identify user id:Ud1ec870e773a12d3ff494a8ccf348153, group_id:None
+It's a solo chat room.
+User found in room 0
+2018年4月29日
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時26分	test
+BOT	4月29日17時26分	
+
+利光	4月29日17時26分	test3
+BOT	4月29日17時26分	こんにちは！
+
+利光	4月29日17時33分	あ
+BOT	4月29日17時33分	
+
+利光	4月29日17時33分	え？
+BOT	4月29日17時33分	
+
+利光	4月29日17時37分	oi
+BOT	4月29日17時37分	hey
+
+利光	4月29日17時37分	いつ壊れるの
+BOT	4月29日17時37分	
+
+利光	4月29日17時37分	またかよ
+BOT	4月29日17時37分	
+
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [29/Apr/2018 17:53:59] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:54:04] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:54:07] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:54:42] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 17:55:02] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [29/Apr/2018 17:55:03] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [29/Apr/2018 17:55:07] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [29/Apr/2018 17:55:10] "GET /4040 HTTP/1.1" 404 -
+127.0.0.1 - - [29/Apr/2018 18:59:46] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 19:00:36] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 20:11:17] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 20:11:25] "POST /callback HTTP/1.1" 200 -
+127.0.0.1 - - [29/Apr/2018 20:11:34] "POST /callback HTTP/1.1" 200 -
