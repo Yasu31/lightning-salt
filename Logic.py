@@ -129,8 +129,6 @@ class Logic:
     def make_room_path(self, room_id):
         if not os.path.exists("log/" + str(room_id)):
             os.makedirs("log/" + str(room_id))
-        if not os.path.exists("log/" + str(room_id) + "/all_received_messages"):
-            os.makedirs("log/" + str(room_id) + "/all_received_messages")
 
     def save_log(self):
         '''
@@ -148,9 +146,9 @@ class Logic:
             file.write(room.messages_log)
             file.close()
             file = open("log/" + str(room.id) +
-                        "/all_received_messages.txt", 'a')
+                        "/all_received_messages.txt", 'w')
             for line in room.messages_list:
-                file.write(line + "\n")
+                file.write(line+"\n")
             file.close()
 
 
@@ -217,7 +215,13 @@ class Room:
         try:
             file = open("log/" + self.id + "/all_received_messages.txt", 'r')
             print("loading previous logs")
-            self.messages_list = file.readlines()
+            msgs = file.readlines()
+            for msg in msgs:
+                if msg == "\n":
+                    continue
+                else:
+                    self.messages_list.append(msg)
+            print(self.messages_list)
         except FileNotFoundError:
             self.messages_list = ["こんにちは！", "ヨロです"]
 

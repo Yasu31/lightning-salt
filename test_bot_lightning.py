@@ -89,6 +89,7 @@ def analyze_messages():
             continue
         line_bot_api.reply_message(event.reply_token, replies)
     # recursive function!
+    logic.save_log()
     analyze_messages()
 
 
