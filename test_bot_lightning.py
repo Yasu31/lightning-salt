@@ -79,7 +79,7 @@ def callback():
     except InvalidSignatureError:
         print("invalid signature")
         abort(400)
-
+    print("received ",len(events),"number of events")
     for event in events:
         print("_________analyzing event_________")
         if event.message.id == "100001":
@@ -91,9 +91,10 @@ def callback():
         elif event.source.type == "room":
             group_id = event.source.room_id
         if logic.identify(event.source.user_id, group_id) < 0:
-            print("New user or room.")
-            logic.add_room_or_user(line_bot_api.get_profile
-                                   (event.source.user_id), group_id)
+            print("New user or room. Adding it...")
+            prof = line_bot_api.get_profile(event.source.user_id)
+            logic.add_room_or_user(prof, group_id)
+            print("added user to room.")
 
         if isinstance(event, MessageEvent):
             if isinstance(event.message, TextMessage):
@@ -105,6 +106,7 @@ def callback():
                     get_media(event.message.id))
             else:
                 continue
+            print("replying...")
             line_bot_api.reply_message(
                 event.reply_token, reply)
         logic.save_log()  # this is only temporarily here; save at regular intervals instead!
