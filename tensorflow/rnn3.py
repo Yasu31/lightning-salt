@@ -1,3 +1,8 @@
+# a clumsy amalgamation of articles "Variable Sequence Lengths in TensorFlow"  and "Using the LSTM API in TensorFlow (3/7)"
+# https://gist.github.com/danijar/3f3b547ff68effb03e20c470af22c696
+# https://danijar.com/variable-sequence-lengths-in-tensorflow/
+# https://medium.com/@erikhallstrm/using-the-tensorflow-lstm-api-3-7-5f2b97ca6b73#.a6ai9917d
+
 from __future__ import print_function, division
 import numpy as np
 import tensorflow as tf
