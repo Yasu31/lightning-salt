@@ -1,14 +1,10 @@
 from __future__ import print_function, division
 import numpy as np
 import tensorflow as tf
-# import matplotlib.pyplot as plt
-
-# https://medium.com/@erikhallstrm/hello-world-rnn-83cd7105b767
 
 num_epochs = 100
 total_series_length = 50000
 truncated_backprop_length = 15
-# it is too computationally expensive to back propage through all time
 state_size = 4
 num_classes = 2
 echo_step = 3
@@ -32,72 +28,63 @@ def generateData():
     return (x, y)
 
 
-print("creating graph...")
-
 # the batch data are fed into the variables on each run.
 batchX_placeholder = tf.placeholder(
     tf.float32, [batch_size, truncated_backprop_length])
 batchY_placeholder = tf.placeholder(
     tf.int32, [batch_size, truncated_backprop_length])
-init_state = tf.placeholder(tf.float32, [batch_size, state_size])
+cell_state = tf.placeholder(tf.float32, [batch_size, state_size])
+hidden_state = tf.placeholder(tf.float32, [batch_size, state_size])
+init_state = tf.contrib.rnn.LSTMStateTuple(cell_state, hidden_state)
 
-# tf variables are persistent across runs, therefore they can be updated.
-W = tf.Variable(np.random.rand(state_size + 1, state_size), dtype=tf.float32)
-b = tf.Variable(np.zeros((1, state_size)), dtype=tf.float32)
 W2 = tf.Variable(np.random.rand(state_size, num_classes), dtype=tf.float32)
 b2 = tf.Variable(np.zeros((1, num_classes)), dtype=tf.float32)
 
-inputs_series = tf.unstack(batchX_placeholder, axis=1)
+# unpack columns
+inputs_series = tf.split(batchX_placeholder, truncated_backprop_length, 1)
+# tf.split(value, num_or_size_splits, axis=0) splist the tensor axis-wise.
+# here, it splits the batchX_placeholder into truncated_backprop_length pieces
+# therefore, tensors of size (batch_size, 1)
 labels_series = tf.unstack(batchY_placeholder, axis=1)
-# "unstack" the tensor(here, it's a matrix) by axis=1, i.e. the column.
-# So it's a iterable of tensors of size (batch_size, 1)
 
-# forward pass
-current_state = init_state
-states_series = []
-# first, just calculate the states for each time
-for current_input in inputs_series:
-    current_input = tf.reshape(current_input, [batch_size, 1])
-    input_and_state_concatenated = tf.concat([current_input, current_state], 1)
-    next_state = tf.tanh(tf.matmul(input_and_state_concatenated, W) + b)
-    states_series.append(next_state)
-    current_state = next_state
+# Forward passes
+cell = tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True)
+states_series, current_state = tf.nn.static_rnn(
+    cell, inputs_series, init_state)
 
-# the output layer- a softmax layer that outputs the classes "one-hot encoded".
-# It is a function of the state at each time.
 logits_series = [tf.matmul(state, W2) + b2 for state in states_series]
 predictions_series = [tf.nn.softmax(logits) for logits in logits_series]
 
-# calculate the cross entropy loss of the batch
 losses = [tf.nn.sparse_softmax_cross_entropy_with_logits(
     logits=logits, labels=labels) for logits, labels in zip(logits_series, labels_series)]
 total_loss = tf.reduce_mean(losses)
 
 train_step = tf.train.AdagradOptimizer(0.3).minimize(total_loss)
 
-print("starting training...")
 with tf.Session() as sess:
     sess.run(tf.initialize_all_variables())
     loss_list = []
     for epoch_idx in range(num_epochs):
         x, y = generateData()
-        _current_state = np.zeros((batch_size, state_size))
+        _current_cell_state = np.zeros((batch_size, state_size))
+        _current_hidden_state = np.zeros((batch_size, state_size))
         print("new data, epoch", epoch_idx)
-
         for batch_idx in range(num_batches):
             start_idx = batch_idx * truncated_backprop_length
             end_idx = start_idx + truncated_backprop_length
             batchX = x[:, start_idx:end_idx]
             batchY = y[:, start_idx:end_idx]
-            _total_loss, _train_step, _current_state, _predictions_series =\
-                sess.run([total_loss, train_step, current_state,
-                          predictions_series], feed_dict={
-                    batchX_placeholder: batchX,
-                    batchY_placeholder: batchY,
-                    init_state: _current_state
-                })
 
+            _total_loss, _train_step, _current_state, _predictions_series = \
+                sess.run(
+                    [total_loss, train_step, current_state, predictions_series],
+                    feed_dict={
+                        batchX_placeholder: batchX,
+                        batchY_placeholder: batchY,
+                        cell_state: _current_cell_state,
+                        hidden_state: _current_hidden_state
+                    })
+            _current_cell_state, _current_hidden_state = _current_state
             loss_list.append(_total_loss)
-
             if batch_idx % 100 == 0:
-                print("Step", batch_idx, "Loss", _total_loss)
+                print("Step", batch_idx, "Batch loss", _total_loss)
