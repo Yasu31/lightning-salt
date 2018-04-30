@@ -49,10 +49,13 @@ b2 = tf.Variable(np.zeros((1, num_classes)), dtype=tf.float32)
 
 inputs_series = tf.unstack(batchX_placeholder, axis=1)
 labels_series = tf.unstack(batchY_placeholder, axis=1)
+# "unstack" the tensor(here, it's a matrix) by axis=1, i.e. the column.
+# So it's a iterable of tensors of size (batch_size, 1)
 
 # forward pass
 current_state = init_state
 states_series = []
+# first, just calculate the states for each time
 for current_input in inputs_series:
     current_input = tf.reshape(current_input, [batch_size, 1])
     input_and_state_concatenated = tf.concat([current_input, current_state], 1)
@@ -60,7 +63,8 @@ for current_input in inputs_series:
     states_series.append(next_state)
     current_state = next_state
 
-# the final layer- a softmax layer that outputs the classes "one-hot encoded"
+# the output layer- a softmax layer that outputs the classes "one-hot encoded".
+# It is a function of the state at each time.
 logits_series = [tf.matmul(state, W2) + b2 for state in states_series]
 predictions_series = [tf.nn.softmax(logits) for logits in logits_series]
 
