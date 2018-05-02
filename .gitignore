@@ -10,3 +10,4 @@ log/*
 *.txt~
 chat\ log/*
 *Icon
+*nohup.out
