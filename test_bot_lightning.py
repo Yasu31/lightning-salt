@@ -17,6 +17,9 @@ from Logic import Logic
 import atexit
 from queue import Queue
 from threading import Thread
+import base64
+nimport hashlib
+import hmac
 
 
 def load_credentials():
@@ -103,6 +106,15 @@ def callback():
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
+
+    print("validating signature....")
+    hash = hmac.new(secret.encode('utf-8'), body.encode('utf-8'),
+                    hashlib.sha256).digest()
+    if base64.b64encode(hash) != signature:
+        print("Invalid Signature!!!!")
+        abort(403)
+        return
+    print("signature valid!")
 
     # parse webhook body
     try:
