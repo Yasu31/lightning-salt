@@ -7,3 +7,5 @@ env/*
 *.py~
 log/*
 *.py#
+*.txt~
+chat\ log/*

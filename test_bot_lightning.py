@@ -18,11 +18,16 @@ import atexit
 from queue import Queue
 from threading import Thread
 import base64
-nimport hashlib
+import hashlib
 import hmac
 
 
 def load_credentials():
+    '''
+    create an XML file in the same directory as this script, with the structure:
+    <data><token> *channel access token* </token>
+    <secret> *channel secret" </secret></data>
+'''
     xdoc = minidom.parse("credentials.xml")
     token = xdoc.getElementsByTagName("token")[0].childNodes[0].data
     secret = xdoc.getElementsByTagName("secret")[0].childNodes[0].data
