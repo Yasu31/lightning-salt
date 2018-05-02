@@ -9,3 +9,4 @@ log/*
 *.py#
 *.txt~
 chat\ log/*
+*Icon
