@@ -207,6 +207,7 @@ class Room:
         self.messages_log += ("BOT\t" + self.get_time() + "\t" + text + "\n")
 
     def initialize_messages(self):
+        # TODO: handle newline characters better!(be consistent,at least)
         cur_time = time.localtime()
         self.messages_log += (str(cur_time.tm_year) + "年" +
                               str(cur_time.tm_mon) + "月" +
@@ -220,7 +221,7 @@ class Room:
                 if msg == "\n":
                     continue
                 else:
-                    self.messages_list.append(msg)
+                    self.messages_list.append(msg[:-1])
             print(self.messages_list)
         except FileNotFoundError:
             self.messages_list = ["こんにちは！", "ヨロです"]
