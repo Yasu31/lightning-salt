@@ -1,6 +1,6 @@
 # lightning-salt
 
-use the *ls-env* conda environment
+use the *ls-env* virtualenv
 
 Make sure that credentials.xml exists, because that holds the access tokens and such for the LINE account.
 
