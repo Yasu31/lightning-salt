@@ -9,3 +9,5 @@ log/*
 *.py#
 *.txt~
 chat\ log/*
+*Icon
+*nohup.out
