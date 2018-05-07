@@ -71,7 +71,7 @@ def last_relevant(output, length_input):
     return relevant
 
 x, y = generateData(botname)
-num_epochs = 200
+num_epochs = 100
 max_input_length = x.shape[1]  # maximum num of chacacters in the training data messages
 input_dimensions = x.shape[2]  # how many types of characters there are
 input_data_num = x.shape[0]  # how many different training data
@@ -82,10 +82,10 @@ batch_size = 5
 
 
 batchX_placeholder = tf.placeholder(
-    tf.float32, [batch_size, backprop_length, input_dimensions])
-batchY_placeholder = tf.placeholder(tf.float32, [batch_size, num_classes])
-cell_state = tf.placeholder(tf.float32, [batch_size, state_size])
-hidden_state = tf.placeholder(tf.float32, [batch_size, state_size])
+    tf.float32, [None, backprop_length, input_dimensions])
+batchY_placeholder = tf.placeholder(tf.float32, [None, num_classes])
+cell_state = tf.placeholder(tf.float32, [None, state_size])
+hidden_state = tf.placeholder(tf.float32, [None, state_size])
 init_state = tf.contrib.rnn.LSTMStateTuple(cell_state, hidden_state)
 length_input = length(batchX_placeholder)
 output, current_state = tf.nn.dynamic_rnn(tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True),
@@ -99,13 +99,15 @@ cross_entropy = -tf.reduce_sum(batchY_placeholder * tf.log(prediction))
 learning_rate = 0.003
 train_step = tf.train.AdagradOptimizer(learning_rate).minimize(cross_entropy)
 
+
+saver = tf.train.Saver()
 with tf.Session() as sess:
-    sess.run(tf.initialize_all_variables())
+    sess.run(tf.global_variables_initializer())
     loss_list = []
     for epoch_idx in range(num_epochs):
         _current_cell_state = np.zeros((batch_size, state_size))
         _current_hidden_state = np.zeros((batch_size, state_size))
-        for i in range(100):
+        for i in range(20):
             batchX = np.zeros((batch_size, backprop_length, input_dimensions))
             batchY = np.zeros((batch_size, num_classes))
             for j in range(batch_size):
@@ -125,3 +127,22 @@ with tf.Session() as sess:
             loss_list.append(_cross_entropy)
             if i % 10 == 0:
                 print("Step", i, "loss", _cross_entropy)
+    print("training finished.")
+    saver.save(sess, "./tmp/model.ckpt")
+
+    # load the model.
+    # cf: https://github.com/MareArts/rnn_save_restore_test/blob/master/simple_rnn_1layer_save_restore_test.py
+    sess.run(tf.global_variables_initializer())
+    saver.restore(sess, "./tmp/model.ckpt")
+    for singlex in x:
+        _current_cell_state_a = np.zeros((1, state_size))
+        _current_hidden_state_a = np.zeros((1, state_size))
+        singlex_tmp = np.zeros((1, singlex.shape[0], singlex.shape[1]))
+        singlex_tmp[0] = singlex
+        _prediction=sess.run(prediction, feed_dict={
+            batchX_placeholder: singlex_tmp,
+            cell_state: _current_cell_state_a,
+            hidden_state: _current_hidden_state_a,
+
+        })
+        print("prediction:\t", _prediction)
