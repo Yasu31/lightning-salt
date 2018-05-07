@@ -1,4 +1,4 @@
-'''
+g'''
 The Neural Network interface for the chatbot.
 Use this to train the NN as well as to actually use it.
 Based on training.py, which was based on rnn3.py, which was based on
@@ -16,6 +16,8 @@ botname = "okan"
 class NeuralNetwork:
     def __init__(self, botname="okan"):
         self.botname = botname
+        self.parser=Parser()
+        self.filesmanager = FilesManager()
 
     def train(self):
         x, y = self.generateData()
@@ -28,23 +30,7 @@ class NeuralNetwork:
         num_classes = y.shape[1]  # how many types of output classes? (how many responses?)
         batch_size = 5
 
-
-        batchX_placeholder = tf.placeholder(
-            tf.float32, [None, backprop_length, input_dimensions])
-        batchY_placeholder = tf.placeholder(tf.float32, [None, num_classes])
-        cell_state = tf.placeholder(tf.float32, [None, state_size])
-        hidden_state = tf.placeholder(tf.float32, [None, state_size])
-        init_state = tf.contrib.rnn.LSTMStateTuple(cell_state, hidden_state)
-        length_input = self.length(batchX_placeholder)
-        output, current_state = tf.nn.dynamic_rnn(tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True), batchX_placeholder, dtype=tf.float32, sequence_length=length_input)
-        last = self.last_relevant(output, length_input)
-        W2 = tf.Variable(np.random.rand(state_size, num_classes), dtype=tf.float32)
-        b2 = tf.Variable(np.zeros((num_classes)), dtype=tf.float32)
-        
-        prediction = tf.nn.softmax(tf.matmul(last, W2) + b2)
-        cross_entropy = -tf.reduce_sum(batchY_placeholder * tf.log(prediction))
-        learning_rate = 0.003
-        train_step = tf.train.AdagradOptimizer(learning_rate).minimize(cross_entropy)
+        self.createModel(backprop_length, input_dimensions, num_classes, state_size)
 
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
@@ -61,12 +47,12 @@ class NeuralNetwork:
                         batchY[j] = y[r]
                     _cross_entropy, _train_step, _current_state, _prediction =\
                     sess.run(
-                    [cross_entropy, train_step, current_state, prediction],
+                    [self.cross_entropy, self.train_step, self.current_state, self.prediction],
                     feed_dict={
-                        batchX_placeholder: batchX,
-                        batchY_placeholder: batchY,
-                        cell_state: _current_cell_state,
-                        hidden_state: _current_cell_state
+                        self.batchX_placeholder: batchX,
+                        self.batchY_placeholder: batchY,
+                        self.cell_state: _current_cell_state,
+                        self.hidden_state: _current_cell_state
                     })
                     _current_cell_state, _current_hidden_state = _current_state
                     loss_list.append(_cross_entropy)
@@ -93,7 +79,25 @@ class NeuralNetwork:
         relevant = tf.gather(flat, index)
         return relevant
 
+    def createModel(self, backprop_length, input_dimensions, num_classes, state_size):
+        self.batchX_placeholder = tf.placeholder(
+            tf.float32, [None, backprop_length, input_dimensions])
+        self.batchY_placeholder = tf.placeholder(tf.float32, [None, num_classes])
+        self.cell_state = tf.placeholder(tf.float32, [None, state_size])
+        self.hidden_state = tf.placeholder(tf.float32, [None, state_size])
+        self.init_state = tf.contrib.rnn.LSTMStateTuple(self.cell_state, self.hidden_state)
+        self.length_input = self.length(self.batchX_placeholder)
+        self.output, self.current_state = tf.nn.dynamic_rnn(tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True), self.batchX_placeholder, dtype=tf.float32, sequence_length=self.length_input)
+        self.last = self.last_relevant(self.output, self.length_input)
+        self.W2 = tf.Variable(np.random.rand(state_size, num_classes), dtype=tf.float32)
+        self.b2 = tf.Variable(np.zeros((num_classes)), dtype=tf.float32)
         
+        self.prediction = tf.nn.softmax(tf.matmul(self.last, self.W2) + self.b2)
+        self.cross_entropy = -tf.reduce_sum(self.batchY_placeholder * tf.log(self.prediction))
+        self.learning_rate = 0.003
+        self.train_step = tf.train.AdagradOptimizer(self.learning_rate).minimize(self.cross_entropy)
+        
+    
     def generateData(self):
         '''
         x is shaped (input_data_num x max length x input dimensions)
@@ -108,10 +112,8 @@ class NeuralNetwork:
         y is shaped (input_data_num x input_dimensions)
         It holds as one-hot vectors the correct classification for each input.backprop_length
         '''
-        fm = FilesManager()
-        ps = Parser()
-        dataset = fm.load_dataset(self.botname)
-        dataset = [[ps.sentence2vecs(line[0]), line[1]] for line in dataset]
+        dataset = self.filesmanager.load_dataset(self.botname)
+        dataset = [[self.parser.sentence2vecs(line[0]), line[1]] for line in dataset]
         lengths = [line[0].shape[0] for line in dataset]  # list of how long each sentences is
         print("lengths of each sentence is ", lengths)
         max_input_length = max(lengths)
