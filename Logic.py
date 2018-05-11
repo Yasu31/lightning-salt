@@ -4,7 +4,7 @@ from linebot.models import (
 )
 import os
 import random
-
+from Parser import FilesManager
 
 class Logic:
     '''
@@ -21,6 +21,7 @@ class Logic:
         self.id = int(time.time())
         # this is for saving every single text received, for training later.
         self.all_messages = []
+        self.filesmanager = FilesManager()
 
     def receive_text(self, user_id, group_id, text):
         '''
@@ -132,13 +133,11 @@ class Logic:
 
     def save_log(self):
         '''
-        saves logs of conversations
+        saves logs of conversations.
         '''
         self.make_default_path()
-        file = open("log/all_received_messages/" + str(self.id) + ".txt", 'w')
-        for message in self.all_messages:
-            file.write(message + str("\n"))
-        file.close()
+        filepath = "log/all_received_messages/" + str(self.id) + ".csv"
+        self.filesmanager.save_list_to_csv(self.all_messages, filepath)
         for room in self.rooms:
             self.make_room_path(room.id)
             file = open("log/" + str(room.id) + "/" +

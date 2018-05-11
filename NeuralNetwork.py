@@ -1,4 +1,4 @@
-g'''
+'''
 The Neural Network interface for the chatbot.
 Use this to train the NN as well as to actually use it.
 Based on training.py, which was based on rnn3.py, which was based on
@@ -21,14 +21,20 @@ class NeuralNetwork:
 
     def train(self):
         x, y = self.generateData()
-        num_epochs = 20
+        num_epochs = 500
         max_input_length = x.shape[1]  # maximum num of chacacters in the training data messages
         input_dimensions = x.shape[2]  # how many types of characters there are
         input_data_num = x.shape[0]  # how many different training data
         backprop_length = max_input_length
-        state_size = 100
+        state_size = 300
         num_classes = y.shape[1]  # how many types of output classes? (how many responses?)
-        batch_size = 5
+        self.batch_size = 5
+        batch_size = self.batch_size
+
+        print("max input length\t", max_input_length)
+        print("input dimensions\t", input_dimensions)
+        print("state_size\t", state_size)
+        print("num classes\t", num_classes)
 
         self.createModel(backprop_length, input_dimensions, num_classes, state_size)
 
@@ -38,7 +44,7 @@ class NeuralNetwork:
             for epoch_idx in range(num_epochs):
                 _current_cell_state = np.zeros((batch_size, state_size))
                 _current_hidden_state = np.zeros((batch_size, state_size))
-                for i in range(20):
+                for i in range(500):
                     batchX = np.zeros((batch_size, backprop_length, input_dimensions))
                     batchY = np.zeros((batch_size, num_classes))
                     for j in range(batch_size):
@@ -56,13 +62,52 @@ class NeuralNetwork:
                     })
                     _current_cell_state, _current_hidden_state = _current_state
                     loss_list.append(_cross_entropy)
-                    if i % 10 == 0:
+                    if i % 100 == 0:
                         print("Step", i, "loss", _cross_entropy)
             print("training finished.")
             self.saver = tf.train.Saver()
             self.saver.save(sess, "./tmp/model.ckpt")
 
-
+    def prepare(self):
+        self.max_input_length = 37
+        backprop_length = self.max_input_length
+        input_dimensions = 49  # same as model
+        num_classes = 31  # same as model
+        self.state_size = 300  # same as model
+        self.batch_size = 5
+        self.createModel(backprop_length, input_dimensions, num_classes, self.state_size)
+        self.sess = tf.Session()
+        self.sess.run(tf.global_variables_initializer())
+        saver = tf.train.Saver()
+        saver.restore(self.sess, "./tmp/model.ckpt")
+        
+    def feedForward(self, sentence):
+        '''
+        before doing this, you'll probably have to do prepare() with the same parameters as the trained model.
+'''
+        max_input_length = 100
+        vector = self.parser.sentence2vecs(sentence)
+        x = np.zeros((self.batch_size, self.max_input_length, vector.shape[1]))
+        for i in range(0, min([self.max_input_length, vector.shape[0]])):
+            x[0, i, :] = vector[i, :]
+            x[1, i, :] = vector[i, :]
+            x[2, i, :] = vector[i, :]
+            x[3, i, :] = vector[i, :]
+            x[4, i, :] = vector[i, :]
+        _current_cell_state_a = np.zeros((self.batch_size, self.state_size))
+        _current_hidden_state_a = np.zeros((self.batch_size, self.state_size))
+        _prediction=self.sess.run(self.prediction, feed_dict={
+            self.batchX_placeholder: x,
+            self.cell_state: _current_cell_state_a,
+            self.hidden_state: _current_hidden_state_a,
+        })
+        print("prediction:\t", _prediction[0])
+        argsort = np.argsort(_prediction[0])[::-1]
+        print("rank 1\t",argsort[0], "\tprobablity\t", _prediction[0][argsort[0]])
+        print("rank 2\t",argsort[1], "\tprobablity\t", _prediction[0][argsort[1]])
+        print("rank 3\t",argsort[2], "\tprobablity\t", _prediction[0][argsort[2]])
+        
+        
     def length(self, seq):
         used = tf.sign(tf.reduce_max(tf.abs(seq), reduction_indices=2))
         length = tf.reduce_sum(used, reduction_indices=1)
@@ -81,10 +126,10 @@ class NeuralNetwork:
 
     def createModel(self, backprop_length, input_dimensions, num_classes, state_size):
         self.batchX_placeholder = tf.placeholder(
-            tf.float32, [None, backprop_length, input_dimensions])
-        self.batchY_placeholder = tf.placeholder(tf.float32, [None, num_classes])
-        self.cell_state = tf.placeholder(tf.float32, [None, state_size])
-        self.hidden_state = tf.placeholder(tf.float32, [None, state_size])
+            tf.float32, [self.batch_size, backprop_length, input_dimensions])
+        self.batchY_placeholder = tf.placeholder(tf.float32, [self.batch_size, num_classes])
+        self.cell_state = tf.placeholder(tf.float32, [self.batch_size, state_size])
+        self.hidden_state = tf.placeholder(tf.float32, [self.batch_size, state_size])
         self.init_state = tf.contrib.rnn.LSTMStateTuple(self.cell_state, self.hidden_state)
         self.length_input = self.length(self.batchX_placeholder)
         self.output, self.current_state = tf.nn.dynamic_rnn(tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True), self.batchX_placeholder, dtype=tf.float32, sequence_length=self.length_input)
