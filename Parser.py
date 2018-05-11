@@ -19,7 +19,7 @@ class FilesManager:
         [["Input sentense desu~~", 3], ["next input desu!", 1]]
         '''
         path = os.path.abspath("csv/dataset_"+botname+".csv")
-        dataset_raw = self.__load_csv(path)
+        dataset_raw = self.load_csv_to_list(path)
         dataset = []
         # ignore the first line (it's a header row)
         for line in dataset_raw[1:]:
@@ -29,6 +29,16 @@ class FilesManager:
             # otherwise, consider that line is not filled out properly and ignore.
         return dataset
 
+    def save_list_to_csv(self, list_to_save, filename):
+        '''
+        saves a Python list to a csv file.
+        '''
+        with open(filename, 'w') as csvfile:
+            writer = csv.writer(csvfile)
+            for row in list_to_save:
+                writer.writerow(row)
+
+        
     def __check_int(self, string):
         '''
         checks if a given string is an integer.
@@ -48,7 +58,7 @@ class FilesManager:
         the key is the integer index, and the value is a list of all the phrases in it.
         '''
         path = os.path.abspath("csv/phrases_"+botname+".csv")
-        phrases_raw = self.__load_csv(path)
+        phrases_raw = self.load_csv_to_list(path)
         phrases = {}
         # ignore the first line
         for line in phrases_raw[1:]:
@@ -61,7 +71,7 @@ class FilesManager:
                 phrases[int(line[0])] = dict
         return phrases
         
-    def __load_csv(self, path):
+    def load_csv_to_list(self, path):
         '''
         loads csv file, and returns it as a list
         '''
@@ -109,6 +119,10 @@ class Parser:
         if self.debug:
             print("番号化された文：" + str(data))
             print("無視された文字：" + str(ignored))
+        if len(data) == 0:
+            # a data with zero element causes trouble later on...
+            # so deal with that in an awkward way
+            data = [1]
         vecs = np.zeros((len(data), len(self.dictionary)))
         for i in range(len(data)):
             vecs[i][data[i]] = 1
@@ -126,15 +140,15 @@ class Parser:
 
     def __getDictionary(self):
         return [['あ'], ['い'], ['う'], ['え'], ['お'],
-                ['か'], ['き'], ['く'], ['け'], ['こ'],
-                ['さ'], ['し'], ['す'], ['せ'], ['そ'],
-                ['た'], ['ち'], ['つ'], ['て'], ['と'],
+                ['か', 'が'], ['き', 'ぎ'], ['く', 'ぐ'], ['け', 'げ'], ['こ', 'ご'],
+                ['さ', 'ざ'], ['し', 'じ'], ['す', 'ず'], ['せ', 'ぜ'], ['そ', 'ぞ'],
+                ['た', 'だ'], ['ち', 'ぢ'], ['つ', 'づ'], ['て', 'で'], ['と', 'ど'],
                 ['な'], ['に'], ['ぬ'], ['ね'], ['の'],
-                ['は'], ['ひ'], ['ふ'], ['へ'], ['ほ'],
+                ['は', 'ば'], ['ひ', 'び'], ['ふ', 'ぶ'], ['へ', 'べ'], ['ほ', 'ぼ'],
                 ['ま'], ['み'], ['む'], ['め'], ['も'],
-                ['や'], ['ゆ'], ['よ'],
+                ['や', 'ゃ'], ['ゆ', 'ゅ'], ['よ', 'ょ'],
                 ['ら'], ['り'], ['る'], ['れ'], ['ろ'],
-                ['わ'], ['を'], ['ん'], ['？']]
+                ['わ'], ['を'], ['ん'], ['？'], ['w', 'W'], ['ー', '〜']]
 
 
 if __name__ == "__main__":
