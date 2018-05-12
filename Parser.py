@@ -77,7 +77,8 @@ class FilesManager:
         for line in phrases_raw[1:]:
             if self.__check_int(line[0]):
                 dict = []
-                for item in line[1:]:
+                # ignore the first and second columns
+                for item in line[2:]:
                     if item != "":
                         # if the element actually contains a phrase
                         dict.append(item)

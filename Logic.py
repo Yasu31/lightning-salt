@@ -7,6 +7,7 @@ import random
 from Parser import FilesManager
 from NeuralNetwork import NeuralNetwork
 import numpy as np
+import re
 
 
 class Logic:
@@ -30,10 +31,11 @@ class Logic:
         self.make_paths()
         self.phrases = self.filesmanager.load_phrases()
 
-    def decode(self, nn_prediction, debug=True):
+    def decode(self, nn_prediction, debug=False):
         '''
         decode the output from the neural network.
         Input is the numpy array from the network.
+        Output is the list of the possible phrases.
         '''
         argsort = np.argsort(nn_prediction[0])[::-1]
         # the indices in a list, from biggest to smallest.
@@ -59,6 +61,28 @@ class Logic:
             phrase_list = ["エラーだわ、すまんw"]
         return phrase_list
 
+    def substitute(self, phrase_list, user_id, group_id):
+        '''
+        substitutes phrases as appropriate
+        '''
+        return_list = []
+        group_indicator = "(random_name|random_past_msg)"
+        room_index = self.identify(user_id, group_id)
+        name = self.rooms[room_index].users[self.rooms[room_index].identify(
+            user_id)].display_name
+        for phrase in phrase_list:
+            if (group_id is None) and (re.search(group_indicator, phrase) is not None):
+                # these phrases are not appropriate to return when it's a personal chat
+                continue
+            for i in range(2):
+                phrase = re.sub("random_name", self.rooms[room_index].users[np.random.randint(
+                    len(self.rooms[room_index].users))].display_name, phrase, count=1)
+            phrase = re.sub("random_past_msg", self.rooms[room_index].messages_list[np.random.randint(
+                len(self.rooms[room_index].messages_list))], phrase)
+            phrase = re.sub("your_name", name, phrase)
+            return_list.append(phrase)
+        return return_list
+
     def receive_text(self, user_id, group_id, text):
         '''
         Before calling this, use the identify() method to check if
@@ -78,7 +102,9 @@ class Logic:
         if i >= 0:
             self.rooms[i].receive_text(user_id, text)
             phrase_list = self.decode(self.nn.feedForward(text))
-            rep_text = str(phrase_list)
+            substituted_list = self.substitute(phrase_list, user_id, group_id)
+            rep_text = substituted_list[np.random.randint(
+                len(substituted_list))]
             self.rooms[i].send_text(rep_text)
         return TextSendMessage(text=rep_text)
 
