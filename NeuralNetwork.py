@@ -21,11 +21,11 @@ class NeuralNetwork:
         self.parser = Parser()
         self.filesmanager = FilesManager()
         self.max_input_length = 100
-        self.state_size = 500
+        self.state_size = 400
 
     def train(self):
         x, y = self.generateData()
-        num_epochs = 400
+        num_epochs = 300
         # maximum num of chacacters in the training data messages
         max_input_length = x.shape[1]
         input_dimensions = x.shape[2]  # how many types of characters there are
@@ -51,6 +51,7 @@ class NeuralNetwork:
             for epoch_idx in range(num_epochs):
                 _current_cell_state = np.zeros((batch_size, state_size))
                 _current_hidden_state = np.zeros((batch_size, state_size))
+                print("epoch\t", epoch_idx)
                 for i in range(500):
                     batchX = np.zeros(
                         (batch_size, backprop_length, input_dimensions))
@@ -200,7 +201,7 @@ class NeuralNetwork:
 
 if __name__ == "__main__":
     train = True
-    nn = NeuralNetwork("okan")
+    nn = NeuralNetwork("okan_simple")
     if train:
         nn.train()
     else:

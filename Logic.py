@@ -35,7 +35,7 @@ class Logic:
         decode the output from the neural network.
         Input is the numpy array from the network.
         '''
-        argsort = np.argsort(nn_prediction[0])[::-1]o
+        argsort = np.argsort(nn_prediction[0])[::-1]
         # the indices in a list, from biggest to smallest.
         top_two = argsort[:2]
         self.print_debug("top two indices and their probabilities:")
