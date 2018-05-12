@@ -51,6 +51,9 @@ def check_profile(source):
     '''
     user_id = source.user_id
     group_id = None
+    if user_id == "Udeadbeefdeadbeefdeadbeefdeadbeef":
+        # this means it was a check message from LINE.
+        return (user_id, group_id)
     if source.type == "group":
         group_id = source.group_id
     elif source.type == "room":
@@ -77,10 +80,10 @@ def analyze_messages():
     for event in events:
         replies = []
         user_id, group_id = check_profile(event.source)
+        if user_id == "Udeadbeefdeadbeefdeadbeefdeadbeef":
+            print("connection check message.")
+            continue
         if isinstance(event.message, TextMessage):
-            if user_id == "Udeadbeefdeadbeefdeadbeefdeadbeef":
-                print("connection check message.")
-                continue
             print("message received, Analyzing source...")
             replies.append(logic.receive_text(
                 user_id, group_id, event.message.text))
@@ -112,14 +115,14 @@ def callback():
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
 
-    print("validating signature....")
-    hash = hmac.new(secret.encode('utf-8'), body.encode('utf-8'),
-                    hashlib.sha256).digest()
-    if base64.b64encode(hash) != signature:
-        print("Invalid Signature!!!!")
-        abort(403)
-        return
-    print("signature valid!")
+ #   print("validating signature....")
+ #   hash = hmac.new(secret.encode('utf-8'), body.encode('utf-8'),
+#                    hashlib.sha256).digest()
+#    if base64.b64encode(hash) != signature:
+#        print("Invalid Signature!!!!")
+#        abort(403)
+#        return
+ #   print("signature valid!")
 
     # parse webhook body
     try:

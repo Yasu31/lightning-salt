@@ -3,10 +3,12 @@ import numpy as np
 import csv
 import os.path
 
+
 class FilesManager:
     '''
     loads and writes to files (such as CSV and parameters)
     '''
+
     def __init__(self):
         pass
 
@@ -29,16 +31,27 @@ class FilesManager:
             # otherwise, consider that line is not filled out properly and ignore.
         return dataset
 
-    def save_list_to_csv(self, list_to_save, filename):
+    def save_list_to_csv(self, list_to_save, filename, append=False):
         '''
-        saves a Python list to a csv file.
+        saves a Python list(1D or 2D) to a csv file.
         '''
-        with open(filename, 'w') as csvfile:
-            writer = csv.writer(csvfile)
-            for row in list_to_save:
-                writer.writerow(row)
+        if append:
+            with open(filename, 'a') as csvfile:
+                writer = csv.writer(csvfile)
+                for row in list_to_save:
+                    if not isinstance(row, list):
+                        writer.writerow([row])
+                        continue
+                    writer.writerow(row)
+        else:
+            with open(filename, 'w') as csvfile:
+                writer = csv.writer(csvfile)
+                for row in list_to_save:
+                    if not isinstance(row, list):
+                        writer.writerow([row])
+                        continue
+                    writer.writerow(row)
 
-        
     def __check_int(self, string):
         '''
         checks if a given string is an integer.
@@ -49,7 +62,7 @@ class FilesManager:
             return True
         except ValueError:
             return False
-        
+
     def load_phrases(self, botname="okan"):
         '''
         loads the csv file with phrases for the chatbot (named phrases_<botname>.csv, inside /csv directory)
@@ -70,19 +83,26 @@ class FilesManager:
                         dict.append(item)
                 phrases[int(line[0])] = dict
         return phrases
-        
+
     def load_csv_to_list(self, path):
         '''
-        loads csv file, and returns it as a list
+        loads csv file, and returns it as a 2D list
+        if the rows are single element, returns as 1D list
         '''
         print("opening file ", path)
+        if not os.path.exists(path):
+            print("file not found")
+            return None
         list_to_return = []
         with open(path) as csvfile:
             reader = csv.reader(csvfile)
             for line in reader:
+                if len(line) == 1:
+                    line = line[0]
                 list_to_return.append(line)
         return list_to_return
-            
+
+
 class Parser:
     '''
     reads in a sentence in Japanese and outputs it as a vector.
@@ -91,6 +111,7 @@ class Parser:
     https://github.com/miurahr/pykakasi
     https://qiita.com/almichest/items/52f871ee22e4a44346d4
     '''
+
     def __init__(self, debug=True):
         self.kakasi = kakasi()
         self.kakasi.setMode("H", "H")
