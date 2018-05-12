@@ -5,9 +5,7 @@ env/*
 *__pycache__*
 *.DS_Store
 *~
-log/*
-*.py#
+*#
 *.txt~
-chat\ log/*
 *Icon
 *nohup.out
