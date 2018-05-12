@@ -1,1 +1,0 @@
-web: python test_bot_lightning.py
