@@ -20,6 +20,10 @@ from threading import Thread
 import base64
 import hashlib
 import hmac
+import time
+
+replying = False
+last_logsave = time.time()
 
 
 def load_credentials():
@@ -98,9 +102,13 @@ def analyze_messages():
                 user_id, group_id, line_bot_api.get_message_content(event.message.id), ext))
         else:
             continue
+        global replying
+        while replying:
+            time.sleep(0.01)
+        replying = True
         line_bot_api.reply_message(event.reply_token, replies)
+        replying = False
     # recursive function!
-    logic.save_log()
     analyze_messages()
 
 
@@ -133,6 +141,12 @@ def callback():
         print("invalid signature")
         abort(400)
     print("returning 'OK'...")
+    global last_logsave
+    log_interval = 10
+    if time.time() - last_logsave > 60*log_interval:
+        print("scheduled logging, every ", log_interval, " minutes")
+        logic.save_log()
+        last_logsave = time.time()
     return 'OK'
 
 
