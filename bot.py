@@ -106,8 +106,11 @@ def analyze_messages():
         while replying:
             time.sleep(0.01)
         replying = True
-        line_bot_api.reply_message(event.reply_token, replies)
-        replying = False
+        try:
+            line_bot_api.reply_message(event.reply_token, replies)
+            replying = False
+        except:
+            replying = False
     # recursive function!
     analyze_messages()
 
