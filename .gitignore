@@ -9,3 +9,4 @@ env/*
 *.txt~
 *Icon
 *nohup.out
+log/*
