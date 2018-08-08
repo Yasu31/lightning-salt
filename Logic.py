@@ -21,7 +21,7 @@ class Logic:
         '''
         self.rooms = []
         self.debug = debug
-        self.nn = NeuralNetwork("okan_august")
+        self.nn = NeuralNetwork("okan")
         self.nn.prepare()
         # for identifying this particular session later
         self.id = int(time.time())

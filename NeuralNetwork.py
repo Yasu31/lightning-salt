@@ -210,7 +210,7 @@ class NeuralNetwork:
 
 if __name__ == "__main__":
     train = True
-    nn = NeuralNetwork("okan_august")
+    nn = NeuralNetwork("okan")
     if train:
         nn.train()
     else:
