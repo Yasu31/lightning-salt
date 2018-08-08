@@ -25,7 +25,7 @@ class NeuralNetwork:
 
     def train(self):
         x, y = self.generateData()
-        num_epochs = 300
+        num_epochs = 3000
         # maximum num of chacacters in the training data messages
         max_input_length = x.shape[1]
         input_dimensions = x.shape[2]  # how many types of characters there are
@@ -73,7 +73,16 @@ class NeuralNetwork:
                     _current_cell_state, _current_hidden_state = _current_state
                     loss_list.append(_cross_entropy)
                     if i % 100 == 0:
-                        print("Step", i, "loss", _cross_entropy)
+                        print("Step", i, "out of", num_epochs *
+                              500, "loss", _cross_entropy)
+                if epoch_idx % 10 == 0:
+                    print("saving current model...(for backup)")
+                    self.saver = tf.train.Saver()
+                    if not os.path.exists("./models"):
+                        os.makedirs("./models")
+                    self.saver.save(sess, "./models/" +
+                                    self.botname+"/model.ckpt")
+
             print("training finished.")
             self.saver = tf.train.Saver()
             if not os.path.exists("./models"):
@@ -201,7 +210,7 @@ class NeuralNetwork:
 
 if __name__ == "__main__":
     train = True
-    nn = NeuralNetwork("okan_simple")
+    nn = NeuralNetwork("okan_august")
     if train:
         nn.train()
     else:
